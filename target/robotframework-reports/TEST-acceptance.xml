@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" skip="0" tests="3" name="Acceptance" errors="0">
+<testcase classname="Acceptance.ShouldFail" name="Test Add duplicate entry" time="5">
+<failure message="Variable '${NAME}' not found. Did you mean:&#10;    ${TEST_NAME}" type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.ShouldPass" name="Check out spring boot crud app" time="6">
+</testcase>
+<testcase classname="Acceptance.ShouldPass" name="Test Add entry and remove it" time="8">
+</testcase>
+</testsuite>

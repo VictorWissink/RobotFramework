@@ -1,0 +1,29 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+Resource  VariablesList.txt
+Library  Selenium2Library
+Library  OperatingSystem
+Suite Setup  Setup chromedriver
+
+
+*** Test Cases ***
+
+Test Add duplicate entry
+    Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
+    Input Text  id=uname  Henk
+    Input Text  id=age  43
+    Input Text  id=salary  20000
+    Click Button  id=submit
+    Input Text  id=uname  Henk
+    Input Text  id=age  43
+    Input Text  id=salary  20000
+    Textfield Value Should Be  id=uname  Henk
+    Textfield Value Should Be  id=age  43
+    Textfield Value Should Be  id=salary  20000
+    Click Button  id=submit
+    Wait Until Page Contains Element  id=alert-danger
+    Element Should Contain  id=alert-danger  Error while creating User
+    Click Button  id=remove
+    Close Browser
+
+*** Keywords ****

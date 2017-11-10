@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation  A Resource File Filled With Variables
+Library  Selenium2Library
+Library  OperatingSystem
+
+
+***  Variables  ***
+${NAME}     Set Variable  "Henk"
+${AGE}      Set Variable  43
+${SALARY}   Set Variable  20000
+
+*** Keywords ****
+Setup chromedriver
+  Set Environment Variable  webdriver.chrome.driver  D:/Data/VWissink/Documents/chromedriver/chromedriver.exe

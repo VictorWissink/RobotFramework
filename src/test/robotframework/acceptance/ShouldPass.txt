@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+Library  Selenium2Library
+Library  OperatingSystem
+Suite Setup  Setup chromedriver
+
+***  Variables  ***
+
+
+*** Test Cases ***
+Check out spring boot crud app
+	Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
+	Close Browser
+
+Test Add entry and remove it
+    Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
+    Input Text  id=uname  Henk
+    Input Text  id=age  43
+    Input Text  id=salary  20000
+    Textfield Value Should Be  id=uname  Henk
+    Textfield Value Should Be  id=age  43
+    Textfield Value Should Be  id=salary  20000
+    Click Button  id=submit
+    Wait Until Page Contains Element  id=alert-success
+    Element Should Contain  id=alert-success  success
+    Click Button  id=remove
+    Close Browser
+
+*** Keywords ****
+Setup chromedriver
+  Set Environment Variable  webdriver.chrome.driver  D:/Data/VWissink/Documents/chromedriver/chromedriver.exe
+

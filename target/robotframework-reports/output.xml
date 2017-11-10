@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_144)" generated="20171110 08:46:21.387">
+<suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance" name="Acceptance" id="s1">
+<suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance\ShouldFail.txt" name="ShouldFail" id="s1-s1">
+<kw type="setup" library="VariablesList" name="Setup chromedriver">
+<kw library="OperatingSystem" name="Set Environment Variable">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>webdriver.chrome.driver</arg>
+<arg>D:/Data/VWissink/Documents/chromedriver/chromedriver.exe</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:22.428">Environment variable 'webdriver.chrome.driver' set to value 'D:/Data/VWissink/Documents/chromedriver/chromedriver.exe'.</msg>
+<status endtime="20171110 08:46:22.429" starttime="20171110 08:46:22.424" status="PASS"></status>
+</kw>
+<status endtime="20171110 08:46:22.431" starttime="20171110 08:46:22.422" status="PASS"></status>
+</kw>
+<test name="Test Add duplicate entry" id="s1-s1-t1">
+<kw library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>http://localhost:8080/SpringBootCRUDApp/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:22.444">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171110 08:46:22.447">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171110 08:46:27.709">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 19522
+Only local connections are allowed.</msg>
+<status endtime="20171110 08:46:27.711" starttime="20171110 08:46:22.436" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>${NAME}</arg>
+</arguments>
+<msg level="FAIL" timestamp="20171110 08:46:27.720">Variable '${NAME}' not found. Did you mean:
+    ${TEST_NAME}</msg>
+<status endtime="20171110 08:46:27.721" starttime="20171110 08:46:27.713" status="FAIL"></status>
+</kw>
+<status critical="yes" endtime="20171110 08:46:27.722" starttime="20171110 08:46:22.432" status="FAIL">Variable '${NAME}' not found. Did you mean:
+    ${TEST_NAME}</status>
+</test>
+<doc>A resource file containing the application specific keywords</doc>
+<status endtime="20171110 08:46:27.733" starttime="20171110 08:46:21.637" status="FAIL"></status>
+</suite>
+<suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance\ShouldPass.txt" name="ShouldPass" id="s1-s2">
+<kw type="setup" name="Setup chromedriver">
+<kw library="OperatingSystem" name="Set Environment Variable">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>webdriver.chrome.driver</arg>
+<arg>D:/Data/VWissink/Documents/chromedriver/chromedriver.exe</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:27.775">Environment variable 'webdriver.chrome.driver' set to value 'D:/Data/VWissink/Documents/chromedriver/chromedriver.exe'.</msg>
+<status endtime="20171110 08:46:27.776" starttime="20171110 08:46:27.771" status="PASS"></status>
+</kw>
+<status endtime="20171110 08:46:27.778" starttime="20171110 08:46:27.769" status="PASS"></status>
+</kw>
+<test name="Check out spring boot crud app" id="s1-s2-t1">
+<kw library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>http://localhost:8080/SpringBootCRUDApp/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:27.788">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171110 08:46:27.791">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171110 08:46:31.472">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 20222
+Only local connections are allowed.</msg>
+<status endtime="20171110 08:46:31.475" starttime="20171110 08:46:27.782" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Close Browser">
+<doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
+<status endtime="20171110 08:46:34.238" starttime="20171110 08:46:31.478" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20171110 08:46:34.244" starttime="20171110 08:46:27.779" status="PASS"></status>
+</test>
+<test name="Test Add entry and remove it" id="s1-s2-t2">
+<kw library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>http://localhost:8080/SpringBootCRUDApp/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:34.279">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171110 08:46:34.285">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171110 08:46:38.059">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 8840
+Only local connections are allowed.</msg>
+<status endtime="20171110 08:46:38.061" starttime="20171110 08:46:34.264" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>Henk</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.066">Typing text 'Henk' into text field 'id=uname'</msg>
+<status endtime="20171110 08:46:38.216" starttime="20171110 08:46:38.062" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=age</arg>
+<arg>43</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.221">Typing text '43' into text field 'id=age'</msg>
+<status endtime="20171110 08:46:38.304" starttime="20171110 08:46:38.217" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=salary</arg>
+<arg>20000</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.309">Typing text '20000' into text field 'id=salary'</msg>
+<status endtime="20171110 08:46:38.398" starttime="20171110 08:46:38.305" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>Henk</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.428">Content of text field 'id=uname' is 'Henk'.</msg>
+<status endtime="20171110 08:46:38.429" starttime="20171110 08:46:38.399" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=age</arg>
+<arg>43</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.456">Content of text field 'id=age' is '43'.</msg>
+<status endtime="20171110 08:46:38.457" starttime="20171110 08:46:38.430" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=salary</arg>
+<arg>20000</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.487">Content of text field 'id=salary' is '20000'.</msg>
+<status endtime="20171110 08:46:38.489" starttime="20171110 08:46:38.458" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Button">
+<doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=submit</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.492">Clicking button 'id=submit'.</msg>
+<status endtime="20171110 08:46:38.565" starttime="20171110 08:46:38.490" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Wait Until Page Contains Element">
+<doc>Waits until the element identified by &lt;b&gt;locator&lt;/b&gt; is found on the</doc>
+<arguments>
+<arg>id=alert-success</arg>
+</arguments>
+<status endtime="20171110 08:46:38.814" starttime="20171110 08:46:38.567" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Element Should Contain">
+<doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=alert-success</arg>
+<arg>success</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.907">Element Should Contain: success =&gt; OK</msg>
+<status endtime="20171110 08:46:38.909" starttime="20171110 08:46:38.821" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Button">
+<doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=remove</arg>
+</arguments>
+<msg level="INFO" timestamp="20171110 08:46:38.914">Clicking button 'id=remove'.</msg>
+<status endtime="20171110 08:46:39.126" starttime="20171110 08:46:38.910" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Close Browser">
+<doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
+<status endtime="20171110 08:46:42.159" starttime="20171110 08:46:39.129" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20171110 08:46:42.165" starttime="20171110 08:46:34.253" status="PASS"></status>
+</test>
+<doc>A resource file containing the application specific keywords</doc>
+<status endtime="20171110 08:46:42.183" starttime="20171110 08:46:27.746" status="PASS"></status>
+</suite>
+<status endtime="20171110 08:46:42.247" starttime="20171110 08:46:21.404" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1">Critical Tests</stat>
+<stat pass="2" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="0" fail="1" name="ShouldFail" id="s1-s1">Acceptance.ShouldFail</stat>
+<stat pass="2" fail="0" name="ShouldPass" id="s1-s2">Acceptance.ShouldPass</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
