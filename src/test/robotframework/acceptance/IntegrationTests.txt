@@ -4,6 +4,7 @@ Library  HttpRequestLibrary
 Library  OperatingSystem
 Force Tags    GET
 Test Setup  Clear Database
+Suite Teardown  Clear Database
 
 ***  Variables  ***
 

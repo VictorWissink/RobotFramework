@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="2" skip="0" tests="14" name="Acceptance" errors="0">
+<testsuite failures="2" skip="0" tests="15" name="Acceptance" errors="0">
 <testcase classname="Acceptance.IntegrationTests" name="Get server version" time="1">
 </testcase>
 <testcase classname="Acceptance.IntegrationTests" name="Get User that does not exist" time="0">
@@ -17,17 +17,19 @@
 <testcase classname="Acceptance.ShouldFail" name="Invalid variable reference" time="6">
 <failure message="Variable '${SALARY}' not found." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.ShouldFail" name="Nonexistent ID" time="5">
+<testcase classname="Acceptance.ShouldFail" name="Nonexistent ID" time="6">
 <failure message="RuntimeException" type="AssertionError"></failure>
 </testcase>
 <testcase classname="Acceptance.ShouldPass" name="Add values and reset form" time="5">
 </testcase>
-<testcase classname="Acceptance.ShouldPass" name="Test Add entry and remove it" time="6">
+<testcase classname="Acceptance.ShouldPass" name="Test Add entry and remove it" time="5">
 </testcase>
 <testcase classname="Acceptance.ShouldPass" name="Test Add duplicate entry" time="6">
 </testcase>
 <testcase classname="Acceptance.ShouldPass" name="Add values and reset form with short name" time="6">
 </testcase>
-<testcase classname="Acceptance.ShouldPass" name="Add values and reset form with a long name" time="7">
+<testcase classname="Acceptance.ShouldPass" name="Add values and reset form with a long name" time="6">
+</testcase>
+<testcase classname="Acceptance.ShouldPass" name="Edit user" time="6">
 </testcase>
 </testsuite>

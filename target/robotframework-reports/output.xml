@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_144)" generated="20171121 08:39:24.530">
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_144)" generated="20171121 14:54:34.175">
 <suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance" name="Acceptance" id="s1">
 <suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance\IntegrationTests.txt" name="IntegrationTests" id="s1-s1">
 <test name="Get server version" id="s1-s1-t1">
@@ -11,7 +11,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:25.473" starttime="20171121 08:39:24.979" status="PASS"></status>
+<status endtime="20171121 14:54:35.178" starttime="20171121 14:54:34.657" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -22,8 +22,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:25.785">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:25.786" starttime="20171121 08:39:25.475" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.266">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.267" starttime="20171121 14:54:35.180" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -31,12 +31,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:25.790">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.272">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:25.791" starttime="20171121 08:39:25.786" status="PASS"></status>
+<status endtime="20171121 14:54:35.273" starttime="20171121 14:54:35.268" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:25.792" starttime="20171121 08:39:24.976" status="PASS"></status>
+<status endtime="20171121 14:54:35.275" starttime="20171121 14:54:34.654" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -44,7 +44,7 @@
 <arg>CRUDApp</arg>
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 </arguments>
-<status endtime="20171121 08:39:25.802" starttime="20171121 08:39:25.794" status="PASS"></status>
+<status endtime="20171121 14:54:35.282" starttime="20171121 14:54:35.276" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Get Request">
 <doc> Send a GET request on the session object found using the</doc>
@@ -55,8 +55,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:25.822">${resp} = {"status_code":200,"text":"1.0","content":"1.0","json":1.0,"headers":{"Content-Length":"3","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Content-Type":"text/plain;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:25.823" starttime="20171121 08:39:25.805" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.300">${resp} = {"status_code":200,"text":"1.0","content":"1.0","json":1.0,"headers":{"Content-Length":"3","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Content-Type":"text/plain;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.301" starttime="20171121 14:54:35.284" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -64,10 +64,10 @@
 <arg>${resp.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:25.829">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.307">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:25.830" starttime="20171121 08:39:25.825" status="PASS"></status>
+<status endtime="20171121 14:54:35.309" starttime="20171121 14:54:35.303" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -75,12 +75,12 @@
 <arg>${resp.content}</arg>
 <arg>1.0</arg>
 </arguments>
-<status endtime="20171121 08:39:25.838" starttime="20171121 08:39:25.834" status="PASS"></status>
+<status endtime="20171121 14:54:35.316" starttime="20171121 14:54:35.311" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:25.840" starttime="20171121 08:39:24.972" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.317" starttime="20171121 14:54:34.649" status="PASS"></status>
 </test>
 <test name="Get User that does not exist" id="s1-s1-t2">
 <kw type="setup" name="Clear Database">
@@ -91,7 +91,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:25.862" starttime="20171121 08:39:25.849" status="PASS"></status>
+<status endtime="20171121 14:54:35.336" starttime="20171121 14:54:35.326" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -102,8 +102,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:25.875">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:25.876" starttime="20171121 08:39:25.864" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.347">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.348" starttime="20171121 14:54:35.337" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -111,12 +111,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:25.880">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.354">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:25.882" starttime="20171121 08:39:25.876" status="PASS"></status>
+<status endtime="20171121 14:54:35.357" starttime="20171121 14:54:35.350" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:25.883" starttime="20171121 08:39:25.847" status="PASS"></status>
+<status endtime="20171121 14:54:35.358" starttime="20171121 14:54:35.324" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -125,7 +125,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:25.893" starttime="20171121 08:39:25.885" status="PASS"></status>
+<status endtime="20171121 14:54:35.369" starttime="20171121 14:54:35.360" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Get Request">
 <doc> Send a GET request on the session object found using the</doc>
@@ -136,16 +136,16 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:25.922">${resp} = {"status_code":404,"text":"{\"errorMessage\":\"User with id 1 not found\"}","content":"{\"errorMessage\":\"User with id 1 not found\"}","json":{"errorMessage":"User with id 1 not found"},"headers":{"T...</msg>
-<status endtime="20171121 08:39:25.923" starttime="20171121 08:39:25.894" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.381">${resp} = {"status_code":404,"text":"{\"errorMessage\":\"User with id 1 not found\"}","content":"{\"errorMessage\":\"User with id 1 not found\"}","json":{"errorMessage":"User with id 1 not found"},"headers":{"T...</msg>
+<status endtime="20171121 14:54:35.382" starttime="20171121 14:54:35.371" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:25.928">{"status_code":404,"text":"{\"errorMessage\":\"User with id 1 not found\"}","content":"{\"errorMessage\":\"User with id 1 not found\"}","json":{"errorMessage":"User with id 1 not found"},"headers":{"Transfer-Encoding":"chunked","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:25.929" starttime="20171121 08:39:25.924" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.386">{"status_code":404,"text":"{\"errorMessage\":\"User with id 1 not found\"}","content":"{\"errorMessage\":\"User with id 1 not found\"}","json":{"errorMessage":"User with id 1 not found"},"headers":{"Transfer-Encoding":"chunked","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.387" starttime="20171121 14:54:35.383" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -153,10 +153,10 @@
 <arg>${resp.status_code}</arg>
 <arg>404</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:25.935">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.392">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:25.937" starttime="20171121 08:39:25.931" status="PASS"></status>
+<status endtime="20171121 14:54:35.394" starttime="20171121 14:54:35.389" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Contain">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -164,12 +164,12 @@
 <arg>${resp.content}</arg>
 <arg>not found</arg>
 </arguments>
-<status endtime="20171121 08:39:25.943" starttime="20171121 08:39:25.938" status="PASS"></status>
+<status endtime="20171121 14:54:35.399" starttime="20171121 14:54:35.395" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:25.945" starttime="20171121 08:39:25.844" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.400" starttime="20171121 14:54:35.320" status="PASS"></status>
 </test>
 <test name="Get all users without users in database" id="s1-s1-t3">
 <kw type="setup" name="Clear Database">
@@ -180,7 +180,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:25.962" starttime="20171121 08:39:25.953" status="PASS"></status>
+<status endtime="20171121 14:54:35.421" starttime="20171121 14:54:35.410" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -191,8 +191,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:25.979">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:25.980" starttime="20171121 08:39:25.965" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.435">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.436" starttime="20171121 14:54:35.422" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -200,12 +200,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:25.984">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.444">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:25.985" starttime="20171121 08:39:25.981" status="PASS"></status>
+<status endtime="20171121 14:54:35.446" starttime="20171121 14:54:35.438" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:25.986" starttime="20171121 08:39:25.951" status="PASS"></status>
+<status endtime="20171121 14:54:35.448" starttime="20171121 14:54:35.408" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -213,7 +213,7 @@
 <arg>CRUDApp</arg>
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 </arguments>
-<status endtime="20171121 08:39:25.993" starttime="20171121 08:39:25.988" status="PASS"></status>
+<status endtime="20171121 14:54:35.455" starttime="20171121 14:54:35.449" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Get Request">
 <doc> Send a GET request on the session object found using the</doc>
@@ -224,8 +224,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.009">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:26.010" starttime="20171121 08:39:25.995" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.465">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.466" starttime="20171121 14:54:35.457" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -233,31 +233,31 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.015">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.472">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.018" starttime="20171121 08:39:26.011" status="PASS"></status>
+<status endtime="20171121 14:54:35.473" starttime="20171121 14:54:35.467" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp.content}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.023">None</msg>
-<status endtime="20171121 08:39:26.024" starttime="20171121 08:39:26.020" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.477">None</msg>
+<status endtime="20171121 14:54:35.478" starttime="20171121 14:54:35.475" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.027">{"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:26.029" starttime="20171121 08:39:26.025" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.481">{"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.481" starttime="20171121 14:54:35.479" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:26.030" starttime="20171121 08:39:25.948" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.482" starttime="20171121 14:54:35.403" status="PASS"></status>
 </test>
 <test name="Add User and check if it's added" id="s1-s1-t4">
 <kw type="setup" name="Clear Database">
@@ -268,7 +268,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.049" starttime="20171121 08:39:26.038" status="PASS"></status>
+<status endtime="20171121 14:54:35.496" starttime="20171121 14:54:35.487" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -279,8 +279,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.062">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:26.063" starttime="20171121 08:39:26.050" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.504">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.505" starttime="20171121 14:54:35.497" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -288,12 +288,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.068">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.509">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.070" starttime="20171121 08:39:26.064" status="PASS"></status>
+<status endtime="20171121 14:54:35.510" starttime="20171121 14:54:35.506" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:26.071" starttime="20171121 08:39:26.036" status="PASS"></status>
+<status endtime="20171121 14:54:35.511" starttime="20171121 14:54:35.486" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -302,7 +302,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.081" starttime="20171121 08:39:26.073" status="PASS"></status>
+<status endtime="20171121 14:54:35.521" starttime="20171121 14:54:35.513" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Set Test Variable">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -310,8 +310,8 @@
 <arg>${data}</arg>
 <arg>{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.086">${data} = {"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
-<status endtime="20171121 08:39:26.087" starttime="20171121 08:39:26.082" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.530">${data} = {"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
+<status endtime="20171121 14:54:35.531" starttime="20171121 14:54:35.522" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Create Dictionary">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -321,8 +321,8 @@
 <assign>
 <var>&amp;{headers}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.092">&amp;{headers} = { Content-Type=application/json }</msg>
-<status endtime="20171121 08:39:26.093" starttime="20171121 08:39:26.088" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.540">&amp;{headers} = { Content-Type=application/json }</msg>
+<status endtime="20171121 14:54:35.541" starttime="20171121 14:54:35.533" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -335,24 +335,24 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.196">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/240"}}</msg>
-<status endtime="20171121 08:39:26.197" starttime="20171121 08:39:26.094" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.566">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/295"}}</msg>
+<status endtime="20171121 14:54:35.567" starttime="20171121 14:54:35.543" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${data}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.199">{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
-<status endtime="20171121 08:39:26.200" starttime="20171121 08:39:26.198" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.569">{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
+<status endtime="20171121 14:54:35.570" starttime="20171121 14:54:35.568" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.203">{"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/240"}}</msg>
-<status endtime="20171121 08:39:26.203" starttime="20171121 08:39:26.201" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.573">{"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/295"}}</msg>
+<status endtime="20171121 14:54:35.574" starttime="20171121 14:54:35.571" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -360,10 +360,10 @@
 <arg>${resp.status_code}</arg>
 <arg>201</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.207">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.578">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.207" starttime="20171121 08:39:26.204" status="PASS"></status>
+<status endtime="20171121 14:54:35.579" starttime="20171121 14:54:35.575" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Get Request">
 <doc> Send a GET request on the session object found using the</doc>
@@ -374,16 +374,16 @@
 <assign>
 <var>${resp2}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.218">${resp2} = {"status_code":200,"text":"[{\"id\":240,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":240,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":240.0,"name"...</msg>
-<status endtime="20171121 08:39:26.218" starttime="20171121 08:39:26.208" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.586">${resp2} = {"status_code":200,"text":"[{\"id\":295,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":295,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":295.0,"name"...</msg>
+<status endtime="20171121 14:54:35.587" starttime="20171121 14:54:35.581" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp2}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.222">{"status_code":200,"text":"[{\"id\":240,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":240,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":240.0,"name":"Henksaer","age":24.0,"salary":20000.0}],"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/240","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:26.222" starttime="20171121 08:39:26.220" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.591">{"status_code":200,"text":"[{\"id\":295,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":295,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":295.0,"name":"Henksaer","age":24.0,"salary":20000.0}],"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/295","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.592" starttime="20171121 14:54:35.589" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -391,10 +391,10 @@
 <arg>${resp2.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.226">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.599">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.228" starttime="20171121 08:39:26.223" status="PASS"></status>
+<status endtime="20171121 14:54:35.600" starttime="20171121 14:54:35.594" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Contain">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -402,12 +402,12 @@
 <arg>${resp2.content}</arg>
 <arg>Henksaer</arg>
 </arguments>
-<status endtime="20171121 08:39:26.232" starttime="20171121 08:39:26.229" status="PASS"></status>
+<status endtime="20171121 14:54:35.603" starttime="20171121 14:54:35.601" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:26.234" starttime="20171121 08:39:26.033" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.605" starttime="20171121 14:54:35.484" status="PASS"></status>
 </test>
 <test name="Add User without content" id="s1-s1-t5">
 <kw type="setup" name="Clear Database">
@@ -418,7 +418,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.246" starttime="20171121 08:39:26.239" status="PASS"></status>
+<status endtime="20171121 14:54:35.617" starttime="20171121 14:54:35.610" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -429,8 +429,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.262">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:26.262" starttime="20171121 08:39:26.247" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.630">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.631" starttime="20171121 14:54:35.618" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -438,12 +438,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.268">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.634">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.269" starttime="20171121 08:39:26.263" status="PASS"></status>
+<status endtime="20171121 14:54:35.635" starttime="20171121 14:54:35.631" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:26.270" starttime="20171121 08:39:26.237" status="PASS"></status>
+<status endtime="20171121 14:54:35.636" starttime="20171121 14:54:35.608" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -452,7 +452,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.284" starttime="20171121 08:39:26.272" status="PASS"></status>
+<status endtime="20171121 14:54:35.646" starttime="20171121 14:54:35.638" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Set Test Variable">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -460,8 +460,8 @@
 <arg>${data}</arg>
 <arg>{}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.292">${data} = {}</msg>
-<status endtime="20171121 08:39:26.293" starttime="20171121 08:39:26.286" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.651">${data} = {}</msg>
+<status endtime="20171121 14:54:35.651" starttime="20171121 14:54:35.647" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Create Dictionary">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -471,8 +471,8 @@
 <assign>
 <var>&amp;{headers}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.300">&amp;{headers} = { Content-Type=application/json }</msg>
-<status endtime="20171121 08:39:26.300" starttime="20171121 08:39:26.295" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.657">&amp;{headers} = { Content-Type=application/json }</msg>
+<status endtime="20171121 14:54:35.657" starttime="20171121 14:54:35.653" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -485,24 +485,24 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.357">${resp} = {"status_code":400,"text":"{\"timestamp\":1511249966343,\"status\":400,\"error\":\"Bad Request\",\"exception\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"message\":\"Requ...</msg>
-<status endtime="20171121 08:39:26.357" starttime="20171121 08:39:26.303" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.679">${resp} = {"status_code":400,"text":"{\"timestamp\":1511272475675,\"status\":400,\"error\":\"Bad Request\",\"exception\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"message\":\"Requ...</msg>
+<status endtime="20171121 14:54:35.680" starttime="20171121 14:54:35.659" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${data}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.361">{}</msg>
-<status endtime="20171121 08:39:26.363" starttime="20171121 08:39:26.359" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.683">{}</msg>
+<status endtime="20171121 14:54:35.684" starttime="20171121 14:54:35.681" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.367">{"status_code":400,"text":"{\"timestamp\":1511249966343,\"status\":400,\"error\":\"Bad Request\",\"exception\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"message\":\"Required request body is missing: public org.springframework.http.ResponseEntity\u003c?\u003e com.websystique.springboot.controller.RestApiController.createUser(com.websystique.springboot.model.User,org.springframework.web.util.UriComponentsBuilder)\",\"path\":\"/SpringBootCRUDApp/api/user/\"}","content":"{\"timestamp\":1511249966343,\"status\":400,\"error\":\"Bad Request\",\"exception\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"message\":\"Required request body is missing: public org.springframework.http.ResponseEntity\u003c?\u003e com.websystique.springboot.controller.RestApiController.createUser(com.websystique.springboot.model.User,org.springframework.web.util.UriComponentsBuilder)\",\"path\":\"/SpringBootCRUDApp/api/user/\"}","json":{"timestamp":1.511249966343E12,"status":400.0,"error":"Bad Request","exception":"org.springframework.http.converter.HttpMessageNotReadableException","message":"Required request body is missing: public org.springframework.http.ResponseEntity\u003c?\u003e com.websystique.springboot.controller.RestApiController.createUser(com.websystique.springboot.model.User,org.springframework.web.util.UriComponentsBuilder)","path":"/SpringBootCRUDApp/api/user/"},"headers":{"Transfer-Encoding":"chunked","Connection":"close","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:26.369" starttime="20171121 08:39:26.364" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.687">{"status_code":400,"text":"{\"timestamp\":1511272475675,\"status\":400,\"error\":\"Bad Request\",\"exception\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"message\":\"Required request body is missing: public org.springframework.http.ResponseEntity\u003c?\u003e com.websystique.springboot.controller.RestApiController.createUser(com.websystique.springboot.model.User,org.springframework.web.util.UriComponentsBuilder)\",\"path\":\"/SpringBootCRUDApp/api/user/\"}","content":"{\"timestamp\":1511272475675,\"status\":400,\"error\":\"Bad Request\",\"exception\":\"org.springframework.http.converter.HttpMessageNotReadableException\",\"message\":\"Required request body is missing: public org.springframework.http.ResponseEntity\u003c?\u003e com.websystique.springboot.controller.RestApiController.createUser(com.websystique.springboot.model.User,org.springframework.web.util.UriComponentsBuilder)\",\"path\":\"/SpringBootCRUDApp/api/user/\"}","json":{"timestamp":1.511272475675E12,"status":400.0,"error":"Bad Request","exception":"org.springframework.http.converter.HttpMessageNotReadableException","message":"Required request body is missing: public org.springframework.http.ResponseEntity\u003c?\u003e com.websystique.springboot.controller.RestApiController.createUser(com.websystique.springboot.model.User,org.springframework.web.util.UriComponentsBuilder)","path":"/SpringBootCRUDApp/api/user/"},"headers":{"Transfer-Encoding":"chunked","Connection":"close","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.687" starttime="20171121 14:54:35.685" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -510,15 +510,15 @@
 <arg>${resp.status_code}</arg>
 <arg>400</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.375">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.691">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.377" starttime="20171121 08:39:26.370" status="PASS"></status>
+<status endtime="20171121 14:54:35.691" starttime="20171121 14:54:35.688" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:26.378" starttime="20171121 08:39:26.235" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.692" starttime="20171121 14:54:35.606" status="PASS"></status>
 </test>
 <test name="Add same user twice" id="s1-s1-t6">
 <kw type="setup" name="Clear Database">
@@ -529,7 +529,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.398" starttime="20171121 08:39:26.387" status="PASS"></status>
+<status endtime="20171121 14:54:35.710" starttime="20171121 14:54:35.700" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -540,8 +540,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.413">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:26.414" starttime="20171121 08:39:26.399" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.719">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.719" starttime="20171121 14:54:35.710" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -549,12 +549,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.419">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.725">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.421" starttime="20171121 08:39:26.415" status="PASS"></status>
+<status endtime="20171121 14:54:35.726" starttime="20171121 14:54:35.720" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:26.422" starttime="20171121 08:39:26.384" status="PASS"></status>
+<status endtime="20171121 14:54:35.727" starttime="20171121 14:54:35.697" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -563,7 +563,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.455" starttime="20171121 08:39:26.423" status="PASS"></status>
+<status endtime="20171121 14:54:35.736" starttime="20171121 14:54:35.728" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Set Test Variable">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -571,8 +571,8 @@
 <arg>${data}</arg>
 <arg>{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.465">${data} = {"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
-<status endtime="20171121 08:39:26.466" starttime="20171121 08:39:26.458" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.741">${data} = {"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
+<status endtime="20171121 14:54:35.742" starttime="20171121 14:54:35.737" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Create Dictionary">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -582,8 +582,8 @@
 <assign>
 <var>&amp;{headers}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.473">&amp;{headers} = { Content-Type=application/json }</msg>
-<status endtime="20171121 08:39:26.475" starttime="20171121 08:39:26.468" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.746">&amp;{headers} = { Content-Type=application/json }</msg>
+<status endtime="20171121 14:54:35.747" starttime="20171121 14:54:35.743" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -596,24 +596,24 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.505">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/241"}}</msg>
-<status endtime="20171121 08:39:26.505" starttime="20171121 08:39:26.476" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.767">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/296"}}</msg>
+<status endtime="20171121 14:54:35.768" starttime="20171121 14:54:35.748" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${data}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.509">{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
-<status endtime="20171121 08:39:26.510" starttime="20171121 08:39:26.507" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.770">{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
+<status endtime="20171121 14:54:35.771" starttime="20171121 14:54:35.769" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.515">{"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/241"}}</msg>
-<status endtime="20171121 08:39:26.516" starttime="20171121 08:39:26.512" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.773">{"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/296"}}</msg>
+<status endtime="20171121 14:54:35.774" starttime="20171121 14:54:35.772" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -621,10 +621,10 @@
 <arg>${resp.status_code}</arg>
 <arg>201</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.521">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.778">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.522" starttime="20171121 08:39:26.517" status="PASS"></status>
+<status endtime="20171121 14:54:35.779" starttime="20171121 14:54:35.775" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Get Request">
 <doc> Send a GET request on the session object found using the</doc>
@@ -635,16 +635,16 @@
 <assign>
 <var>${resp2}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.529">${resp2} = {"status_code":200,"text":"[{\"id\":241,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":241,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":241.0,"name"...</msg>
-<status endtime="20171121 08:39:26.530" starttime="20171121 08:39:26.523" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.786">${resp2} = {"status_code":200,"text":"[{\"id\":296,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":296,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":296.0,"name"...</msg>
+<status endtime="20171121 14:54:35.786" starttime="20171121 14:54:35.780" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp2}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.535">{"status_code":200,"text":"[{\"id\":241,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":241,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":241.0,"name":"Henksaer","age":24.0,"salary":20000.0}],"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/241","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:26.536" starttime="20171121 08:39:26.532" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.789">{"status_code":200,"text":"[{\"id\":296,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","content":"[{\"id\":296,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0}]","json":[{"id":296.0,"name":"Henksaer","age":24.0,"salary":20000.0}],"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/296","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.790" starttime="20171121 14:54:35.788" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -652,10 +652,10 @@
 <arg>${resp2.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.539">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.794">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.540" starttime="20171121 08:39:26.537" status="PASS"></status>
+<status endtime="20171121 14:54:35.795" starttime="20171121 14:54:35.791" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Contain">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -663,7 +663,7 @@
 <arg>${resp2.content}</arg>
 <arg>Henksaer</arg>
 </arguments>
-<status endtime="20171121 08:39:26.546" starttime="20171121 08:39:26.541" status="PASS"></status>
+<status endtime="20171121 14:54:35.800" starttime="20171121 14:54:35.796" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -676,16 +676,16 @@
 <assign>
 <var>${resp2}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.564">${resp2} = {"status_code":409,"text":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\"}","content":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\...</msg>
-<status endtime="20171121 08:39:26.565" starttime="20171121 08:39:26.548" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.815">${resp2} = {"status_code":409,"text":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\"}","content":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\...</msg>
+<status endtime="20171121 14:54:35.815" starttime="20171121 14:54:35.801" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp2}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.568">{"status_code":409,"text":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\"}","content":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\"}","json":{"errorMessage":"Unable to create. A User with name Henksaer already exist."},"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/241","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:26.569" starttime="20171121 08:39:26.566" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.819">{"status_code":409,"text":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\"}","content":"{\"errorMessage\":\"Unable to create. A User with name Henksaer already exist.\"}","json":{"errorMessage":"Unable to create. A User with name Henksaer already exist."},"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/296","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.820" starttime="20171121 14:54:35.817" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -693,15 +693,15 @@
 <arg>${resp2.status_code}</arg>
 <arg>409</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.573">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.825">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.574" starttime="20171121 08:39:26.570" status="PASS"></status>
+<status endtime="20171121 14:54:35.826" starttime="20171121 14:54:35.821" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:26.575" starttime="20171121 08:39:26.381" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.827" starttime="20171121 14:54:35.695" status="PASS"></status>
 </test>
 <test name="Add Three Users and check if it's added" id="s1-s1-t7">
 <kw type="setup" name="Clear Database">
@@ -712,7 +712,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.585" starttime="20171121 08:39:26.579" status="PASS"></status>
+<status endtime="20171121 14:54:35.840" starttime="20171121 14:54:35.832" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Delete Request">
 <doc> Send a DELETE request on the session object found using the</doc>
@@ -723,8 +723,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.598">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 07:39:25 GMT"}}</msg>
-<status endtime="20171121 08:39:26.598" starttime="20171121 08:39:26.586" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.852">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:35.852" starttime="20171121 14:54:35.841" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -732,12 +732,12 @@
 <arg>${resp.status_code}</arg>
 <arg>204</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.602">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.856">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.603" starttime="20171121 08:39:26.599" status="PASS"></status>
+<status endtime="20171121 14:54:35.856" starttime="20171121 14:54:35.853" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:26.603" starttime="20171121 08:39:26.578" status="PASS"></status>
+<status endtime="20171121 14:54:35.857" starttime="20171121 14:54:35.831" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Create Session">
 <doc>Create a HTTP session to a server</doc>
@@ -746,7 +746,7 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
 <arg>debug=True</arg>
 </arguments>
-<status endtime="20171121 08:39:26.612" starttime="20171121 08:39:26.605" status="PASS"></status>
+<status endtime="20171121 14:54:35.864" starttime="20171121 14:54:35.858" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Set Test Variable">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -754,8 +754,8 @@
 <arg>${user1}</arg>
 <arg>{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.617">${user1} = {"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
-<status endtime="20171121 08:39:26.618" starttime="20171121 08:39:26.614" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.868">${user1} = {"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
+<status endtime="20171121 14:54:35.869" starttime="20171121 14:54:35.864" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Set Test Variable">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -763,8 +763,8 @@
 <arg>${user2}</arg>
 <arg>{"name" : "Willem", "age" : "84", "salary" : "21000"}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.624">${user2} = {"name" : "Willem", "age" : "84", "salary" : "21000"}</msg>
-<status endtime="20171121 08:39:26.625" starttime="20171121 08:39:26.619" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.874">${user2} = {"name" : "Willem", "age" : "84", "salary" : "21000"}</msg>
+<status endtime="20171121 14:54:35.874" starttime="20171121 14:54:35.870" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Set Test Variable">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -772,8 +772,8 @@
 <arg>${user3}</arg>
 <arg>{"name" : "Karl", "age" : "14", "salary" : "203000"}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.632">${user3} = {"name" : "Karl", "age" : "14", "salary" : "203000"}</msg>
-<status endtime="20171121 08:39:26.633" starttime="20171121 08:39:26.626" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.880">${user3} = {"name" : "Karl", "age" : "14", "salary" : "203000"}</msg>
+<status endtime="20171121 14:54:35.881" starttime="20171121 14:54:35.876" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Create Dictionary">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -783,8 +783,8 @@
 <assign>
 <var>&amp;{headers}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.636">&amp;{headers} = { Content-Type=application/json }</msg>
-<status endtime="20171121 08:39:26.637" starttime="20171121 08:39:26.634" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.885">&amp;{headers} = { Content-Type=application/json }</msg>
+<status endtime="20171121 14:54:35.885" starttime="20171121 14:54:35.882" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -797,8 +797,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.661">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/242"}}</msg>
-<status endtime="20171121 08:39:26.662" starttime="20171121 08:39:26.638" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.905">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/297"}}</msg>
+<status endtime="20171121 14:54:35.906" starttime="20171121 14:54:35.886" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -806,10 +806,10 @@
 <arg>${resp.status_code}</arg>
 <arg>201</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.666">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.911">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.667" starttime="20171121 08:39:26.663" status="PASS"></status>
+<status endtime="20171121 14:54:35.912" starttime="20171121 14:54:35.907" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -822,8 +822,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.688">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/243"}}</msg>
-<status endtime="20171121 08:39:26.688" starttime="20171121 08:39:26.668" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.931">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/298"}}</msg>
+<status endtime="20171121 14:54:35.931" starttime="20171121 14:54:35.913" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -831,10 +831,10 @@
 <arg>${resp.status_code}</arg>
 <arg>201</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.693">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.936">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.694" starttime="20171121 08:39:26.689" status="PASS"></status>
+<status endtime="20171121 14:54:35.937" starttime="20171121 14:54:35.933" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Post Request">
 <doc> Send a POST request on the session object found using the</doc>
@@ -847,8 +847,8 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.715">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/244"}}</msg>
-<status endtime="20171121 08:39:26.715" starttime="20171121 08:39:26.695" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.955">${resp} = {"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/299"}}</msg>
+<status endtime="20171121 14:54:35.955" starttime="20171121 14:54:35.938" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -856,26 +856,26 @@
 <arg>${resp.status_code}</arg>
 <arg>201</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.720">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.959">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.720" starttime="20171121 08:39:26.716" status="PASS"></status>
+<status endtime="20171121 14:54:35.960" starttime="20171121 14:54:35.956" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${user1}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.723">{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
-<status endtime="20171121 08:39:26.724" starttime="20171121 08:39:26.722" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.962">{"name" : "Henksaer", "age" : "24", "salary" : "20000"}</msg>
+<status endtime="20171121 14:54:35.962" starttime="20171121 14:54:35.961" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.726">{"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/244"}}</msg>
-<status endtime="20171121 08:39:26.727" starttime="20171121 08:39:26.725" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.964">{"status_code":201,"text":"","content":"","headers":{"Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/299"}}</msg>
+<status endtime="20171121 14:54:35.964" starttime="20171121 14:54:35.963" status="PASS"></status>
 </kw>
 <kw library="HttpRequestLibrary" name="Get Request">
 <doc> Send a GET request on the session object found using the</doc>
@@ -886,16 +886,16 @@
 <assign>
 <var>${resp2}</var>
 </assign>
-<msg level="INFO" timestamp="20171121 08:39:26.737">${resp2} = {"status_code":200,"text":"[{\"id\":242,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0},{\"id\":243,\"name\":\"Willem\",\"age\":84,\"salary\":21000.0},{\"id\":244,\"name\":\"Karl\",\"age\":14,\"s...</msg>
-<status endtime="20171121 08:39:26.737" starttime="20171121 08:39:26.728" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.971">${resp2} = {"status_code":200,"text":"[{\"id\":297,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0},{\"id\":298,\"name\":\"Willem\",\"age\":84,\"salary\":21000.0},{\"id\":299,\"name\":\"Karl\",\"age\":14,\"s...</msg>
+<status endtime="20171121 14:54:35.971" starttime="20171121 14:54:35.965" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Log">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${resp2}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.740">{"status_code":200,"text":"[{\"id\":242,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0},{\"id\":243,\"name\":\"Willem\",\"age\":84,\"salary\":21000.0},{\"id\":244,\"name\":\"Karl\",\"age\":14,\"salary\":203000.0}]","content":"[{\"id\":242,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0},{\"id\":243,\"name\":\"Willem\",\"age\":84,\"salary\":21000.0},{\"id\":244,\"name\":\"Karl\",\"age\":14,\"salary\":203000.0}]","json":[{"id":242.0,"name":"Henksaer","age":24.0,"salary":20000.0},{"id":243.0,"name":"Willem","age":84.0,"salary":21000.0},{"id":244.0,"name":"Karl","age":14.0,"salary":203000.0}],"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 07:39:25 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/244","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
-<status endtime="20171121 08:39:26.741" starttime="20171121 08:39:26.738" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:35.974">{"status_code":200,"text":"[{\"id\":297,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0},{\"id\":298,\"name\":\"Willem\",\"age\":84,\"salary\":21000.0},{\"id\":299,\"name\":\"Karl\",\"age\":14,\"salary\":203000.0}]","content":"[{\"id\":297,\"name\":\"Henksaer\",\"age\":24,\"salary\":20000.0},{\"id\":298,\"name\":\"Willem\",\"age\":84,\"salary\":21000.0},{\"id\":299,\"name\":\"Karl\",\"age\":14,\"salary\":203000.0}]","json":[{"id":297.0,"name":"Henksaer","age":24.0,"salary":20000.0},{"id":298.0,"name":"Willem","age":84.0,"salary":21000.0},{"id":299.0,"name":"Karl","age":14.0,"salary":203000.0}],"headers":{"Transfer-Encoding":"chunked","Content-Length":"0","Date":"Tue, 21 Nov 2017 13:54:35 GMT","Location":"http://localhost:8080/SpringBootCRUDApp/api/user/299","Content-Type":"application/json;charset\u003dUTF-8"}}</msg>
+<status endtime="20171121 14:54:35.975" starttime="20171121 14:54:35.972" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -903,10 +903,10 @@
 <arg>${resp2.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:26.746">Argument types are:
+<msg level="INFO" timestamp="20171121 14:54:35.979">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status endtime="20171121 08:39:26.747" starttime="20171121 08:39:26.743" status="PASS"></status>
+<status endtime="20171121 14:54:35.980" starttime="20171121 14:54:35.977" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Contain">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -914,7 +914,7 @@
 <arg>${resp2.content}</arg>
 <arg>Henksaer</arg>
 </arguments>
-<status endtime="20171121 08:39:26.751" starttime="20171121 08:39:26.748" status="PASS"></status>
+<status endtime="20171121 14:54:35.985" starttime="20171121 14:54:35.982" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Contain">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -922,7 +922,7 @@
 <arg>${resp2.content}</arg>
 <arg>Willem</arg>
 </arguments>
-<status endtime="20171121 08:39:26.756" starttime="20171121 08:39:26.753" status="PASS"></status>
+<status endtime="20171121 14:54:35.991" starttime="20171121 14:54:35.986" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Contain">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -930,15 +930,50 @@
 <arg>${resp2.content}</arg>
 <arg>Karl</arg>
 </arguments>
-<status endtime="20171121 08:39:26.760" starttime="20171121 08:39:26.757" status="PASS"></status>
+<status endtime="20171121 14:54:35.997" starttime="20171121 14:54:35.992" status="PASS"></status>
 </kw>
 <tags>
 <tag>GET</tag>
 </tags>
-<status critical="yes" endtime="20171121 08:39:26.761" starttime="20171121 08:39:26.576" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:35.998" starttime="20171121 14:54:35.829" status="PASS"></status>
 </test>
+<kw type="teardown" name="Clear Database">
+<kw library="HttpRequestLibrary" name="Create Session">
+<doc>Create a HTTP session to a server</doc>
+<arguments>
+<arg>CRUDAppTeardown</arg>
+<arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
+<arg>debug=True</arg>
+</arguments>
+<status endtime="20171121 14:54:36.016" starttime="20171121 14:54:36.007" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Delete Request">
+<doc> Send a DELETE request on the session object found using the</doc>
+<arguments>
+<arg>CRUDAppTeardown</arg>
+<arg>/user/</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg level="INFO" timestamp="20171121 14:54:36.029">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:54:35 GMT"}}</msg>
+<status endtime="20171121 14:54:36.030" starttime="20171121 14:54:36.017" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+<arg>204</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:54:36.035">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20171121 14:54:36.036" starttime="20171121 14:54:36.031" status="PASS"></status>
+</kw>
+<status endtime="20171121 14:54:36.037" starttime="20171121 14:54:36.005" status="PASS"></status>
+</kw>
 <doc>A resource file containing the application specific keywords</doc>
-<status endtime="20171121 08:39:26.770" starttime="20171121 08:39:24.763" status="PASS"></status>
+<status endtime="20171121 14:54:36.037" starttime="20171121 14:54:34.423" status="PASS"></status>
 </suite>
 <suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance\ShouldFail.txt" name="ShouldFail" id="s1-s2">
 <kw type="setup" library="VariablesList" name="Setup chromedriver">
@@ -948,10 +983,10 @@
 <arg>webdriver.chrome.driver</arg>
 <arg>D:/Data/VWissink/Documents/chromedriver/chromedriver.exe</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:27.413">Environment variable 'webdriver.chrome.driver' set to value 'D:/Data/VWissink/Documents/chromedriver/chromedriver.exe'.</msg>
-<status endtime="20171121 08:39:27.414" starttime="20171121 08:39:27.412" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:36.729">Environment variable 'webdriver.chrome.driver' set to value 'D:/Data/VWissink/Documents/chromedriver/chromedriver.exe'.</msg>
+<status endtime="20171121 14:54:36.730" starttime="20171121 14:54:36.727" status="PASS"></status>
 </kw>
-<status endtime="20171121 08:39:27.414" starttime="20171121 08:39:27.411" status="PASS"></status>
+<status endtime="20171121 14:54:36.731" starttime="20171121 14:54:36.726" status="PASS"></status>
 </kw>
 <test name="Invalid variable reference" id="s1-s2-t1">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
@@ -960,11 +995,11 @@
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:27.419">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:39:27.420">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:39:31.591">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 4836
+<msg level="INFO" timestamp="20171121 14:54:36.740">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:54:36.742">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:54:39.639">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 16061
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:39:31.595" starttime="20171121 08:39:27.416" status="PASS"></status>
+<status endtime="20171121 14:54:39.642" starttime="20171121 14:54:36.735" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -972,8 +1007,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Sjors</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:31.600">Typing text 'Sjors' into text field 'id=uname'</msg>
-<status endtime="20171121 08:39:31.791" starttime="20171121 08:39:31.596" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:39.647">Typing text 'Sjors' into text field 'id=uname'</msg>
+<status endtime="20171121 14:54:39.808" starttime="20171121 14:54:39.645" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -981,8 +1016,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>50</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:31.794">Typing text '50' into text field 'id=age'</msg>
-<status endtime="20171121 08:39:31.876" starttime="20171121 08:39:31.792" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:39.813">Typing text '50' into text field 'id=age'</msg>
+<status endtime="20171121 14:54:39.894" starttime="20171121 14:54:39.809" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -990,14 +1025,14 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>${SALARY}</arg>
 </arguments>
-<msg level="FAIL" timestamp="20171121 08:39:31.881">Variable '${SALARY}' not found.</msg>
-<status endtime="20171121 08:39:31.881" starttime="20171121 08:39:31.877" status="FAIL"></status>
+<msg level="FAIL" timestamp="20171121 14:54:39.898">Variable '${SALARY}' not found.</msg>
+<status endtime="20171121 14:54:39.898" starttime="20171121 14:54:39.895" status="FAIL"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:39:33.694" starttime="20171121 08:39:31.883" status="PASS"></status>
+<status endtime="20171121 14:54:42.271" starttime="20171121 14:54:39.900" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:39:33.696" starttime="20171121 08:39:27.415" status="FAIL">Variable '${SALARY}' not found.</status>
+<status critical="yes" endtime="20171121 14:54:42.271" starttime="20171121 14:54:36.732" status="FAIL">Variable '${SALARY}' not found.</status>
 </test>
 <test name="Nonexistent ID" id="s1-s2-t2">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
@@ -1006,11 +1041,11 @@ Only local connections are allowed.</msg>
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:33.717">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:39:33.721">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:39:36.834">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 42486
+<msg level="INFO" timestamp="20171121 14:54:42.278">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:54:42.279">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:54:44.873">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 6296
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:39:36.836" starttime="20171121 08:39:33.708" status="PASS"></status>
+<status endtime="20171121 14:54:44.877" starttime="20171121 14:54:42.275" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1018,8 +1053,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Sjors</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:36.841">Typing text 'Sjors' into text field 'id=uname'</msg>
-<status endtime="20171121 08:39:37.007" starttime="20171121 08:39:36.838" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:44.881">Typing text 'Sjors' into text field 'id=uname'</msg>
+<status endtime="20171121 14:54:45.036" starttime="20171121 14:54:44.879" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1027,8 +1062,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>50</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:37.012">Typing text '50' into text field 'id=age'</msg>
-<status endtime="20171121 08:39:37.143" starttime="20171121 08:39:37.009" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:45.040">Typing text '50' into text field 'id=age'</msg>
+<status endtime="20171121 14:54:45.126" starttime="20171121 14:54:45.037" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1036,8 +1071,8 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>25000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:37.150">Typing text '25000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:39:37.257" starttime="20171121 08:39:37.145" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:45.129">Typing text '25000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:54:45.226" starttime="20171121 14:54:45.127" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1047,34 +1082,22 @@ Only local connections are allowed.</msg>
 </arguments>
 <kw library="Selenium2Library" name="Capture Page Screenshot">
 <doc>Take a screenshot of the current page and embed it into the log.&lt;br&gt;</doc>
-<msg level="INFO" html="yes" timestamp="20171121 08:39:37.737">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status endtime="20171121 08:39:37.738" starttime="20171121 08:39:37.284" status="PASS"></status>
+<msg level="INFO" html="yes" timestamp="20171121 14:54:45.537">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status endtime="20171121 14:54:45.538" starttime="20171121 14:54:45.252" status="PASS"></status>
 </kw>
-<msg level="FAIL" timestamp="20171121 08:39:37.751">RuntimeException</msg>
-<status endtime="20171121 08:39:37.752" starttime="20171121 08:39:37.258" status="FAIL"></status>
+<msg level="FAIL" timestamp="20171121 14:54:45.548">RuntimeException</msg>
+<status endtime="20171121 14:54:45.549" starttime="20171121 14:54:45.227" status="FAIL"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:39:39.066" starttime="20171121 08:39:37.754" status="PASS"></status>
+<status endtime="20171121 14:54:47.833" starttime="20171121 14:54:45.551" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:39:39.068" starttime="20171121 08:39:33.702" status="FAIL">RuntimeException</status>
+<status critical="yes" endtime="20171121 14:54:47.834" starttime="20171121 14:54:42.274" status="FAIL">RuntimeException</status>
 </test>
 <doc>A resource file containing the application specific keywords</doc>
-<status endtime="20171121 08:39:39.085" starttime="20171121 08:39:26.784" status="FAIL"></status>
+<status endtime="20171121 14:54:47.839" starttime="20171121 14:54:36.047" status="FAIL"></status>
 </suite>
 <suite source="D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance\ShouldPass.txt" name="ShouldPass" id="s1-s3">
-<kw type="setup" name="Setup chromedriver">
-<kw library="OperatingSystem" name="Set Environment Variable">
-<doc>Sets an environment variable to a specified value.</doc>
-<arguments>
-<arg>webdriver.chrome.driver</arg>
-<arg>D:/Data/VWissink/Documents/chromedriver/chromedriver.exe</arg>
-</arguments>
-<msg level="INFO" timestamp="20171121 08:39:39.144">Environment variable 'webdriver.chrome.driver' set to value 'D:/Data/VWissink/Documents/chromedriver/chromedriver.exe'.</msg>
-<status endtime="20171121 08:39:39.146" starttime="20171121 08:39:39.142" status="PASS"></status>
-</kw>
-<status endtime="20171121 08:39:39.148" starttime="20171121 08:39:39.140" status="PASS"></status>
-</kw>
 <test name="Add values and reset form" id="s1-s3-t1">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
 <doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
@@ -1082,11 +1105,11 @@ Only local connections are allowed.</msg>
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:39.154">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:39:39.157">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:39:42.550">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 48506
+<msg level="INFO" timestamp="20171121 14:54:47.876">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:54:47.878">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:54:50.450">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 40365
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:39:42.552" starttime="20171121 08:39:39.151" status="PASS"></status>
+<status endtime="20171121 14:54:50.453" starttime="20171121 14:54:47.872" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1094,8 +1117,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Henk</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:42.559">Typing text 'Henk' into text field 'id=uname'</msg>
-<status endtime="20171121 08:39:42.761" starttime="20171121 08:39:42.554" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.458">Typing text 'Henk' into text field 'id=uname'</msg>
+<status endtime="20171121 14:54:50.604" starttime="20171121 14:54:50.454" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1103,8 +1126,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>43</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:42.766">Typing text '43' into text field 'id=age'</msg>
-<status endtime="20171121 08:39:42.890" starttime="20171121 08:39:42.763" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.609">Typing text '43' into text field 'id=age'</msg>
+<status endtime="20171121 14:54:50.694" starttime="20171121 14:54:50.606" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1112,8 +1135,8 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>20000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:42.894">Typing text '20000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:39:42.996" starttime="20171121 08:39:42.891" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.698">Typing text '20000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:54:50.794" starttime="20171121 14:54:50.695" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1121,8 +1144,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Henk</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.024">Content of text field 'id=uname' is 'Henk'.</msg>
-<status endtime="20171121 08:39:43.025" starttime="20171121 08:39:42.997" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.820">Content of text field 'id=uname' is 'Henk'.</msg>
+<status endtime="20171121 14:54:50.822" starttime="20171121 14:54:50.795" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1130,8 +1153,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>43</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.052">Content of text field 'id=age' is '43'.</msg>
-<status endtime="20171121 08:39:43.053" starttime="20171121 08:39:43.026" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.850">Content of text field 'id=age' is '43'.</msg>
+<status endtime="20171121 14:54:50.851" starttime="20171121 14:54:50.823" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1139,16 +1162,16 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>20000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.087">Content of text field 'id=salary' is '20000'.</msg>
-<status endtime="20171121 08:39:43.088" starttime="20171121 08:39:43.054" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.880">Content of text field 'id=salary' is '20000'.</msg>
+<status endtime="20171121 14:54:50.881" starttime="20171121 14:54:50.852" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>id=reset</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.094">Clicking button 'id=reset'.</msg>
-<status endtime="20171121 08:39:43.224" starttime="20171121 08:39:43.090" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.884">Clicking button 'id=reset'.</msg>
+<status endtime="20171121 14:54:50.967" starttime="20171121 14:54:50.881" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1156,8 +1179,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.257">Content of text field 'id=uname' is ''.</msg>
-<status endtime="20171121 08:39:43.258" starttime="20171121 08:39:43.225" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:50.995">Content of text field 'id=uname' is ''.</msg>
+<status endtime="20171121 14:54:50.995" starttime="20171121 14:54:50.967" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1165,8 +1188,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.292">Content of text field 'id=age' is ''.</msg>
-<status endtime="20171121 08:39:43.294" starttime="20171121 08:39:43.260" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:51.024">Content of text field 'id=age' is ''.</msg>
+<status endtime="20171121 14:54:51.026" starttime="20171121 14:54:50.996" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1174,14 +1197,14 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:43.321">Content of text field 'id=salary' is ''.</msg>
-<status endtime="20171121 08:39:43.322" starttime="20171121 08:39:43.295" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:51.051">Content of text field 'id=salary' is ''.</msg>
+<status endtime="20171121 14:54:51.052" starttime="20171121 14:54:51.027" status="PASS"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:39:44.579" starttime="20171121 08:39:43.323" status="PASS"></status>
+<status endtime="20171121 14:54:53.313" starttime="20171121 14:54:51.054" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:39:44.580" starttime="20171121 08:39:39.149" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:53.314" starttime="20171121 14:54:47.869" status="PASS"></status>
 </test>
 <test name="Test Add entry and remove it" id="s1-s3-t2">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
@@ -1190,11 +1213,11 @@ Only local connections are allowed.</msg>
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:44.589">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:39:44.591">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:39:47.715">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 3974
+<msg level="INFO" timestamp="20171121 14:54:53.319">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:54:53.321">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:54:55.840">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 13692
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:39:47.716" starttime="20171121 08:39:44.586" status="PASS"></status>
+<status endtime="20171121 14:54:55.843" starttime="20171121 14:54:53.317" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1202,8 +1225,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Henk</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:47.720">Typing text 'Henk' into text field 'id=uname'</msg>
-<status endtime="20171121 08:39:48.028" starttime="20171121 08:39:47.718" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:55.848">Typing text 'Henk' into text field 'id=uname'</msg>
+<status endtime="20171121 14:54:55.999" starttime="20171121 14:54:55.844" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1211,8 +1234,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>43</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.035">Typing text '43' into text field 'id=age'</msg>
-<status endtime="20171121 08:39:48.317" starttime="20171121 08:39:48.031" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.002">Typing text '43' into text field 'id=age'</msg>
+<status endtime="20171121 14:54:56.088" starttime="20171121 14:54:56.000" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1220,8 +1243,8 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>20000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.328">Typing text '20000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:39:48.555" starttime="20171121 08:39:48.321" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.092">Typing text '20000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:54:56.191" starttime="20171121 14:54:56.090" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1229,8 +1252,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Henk</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.637">Content of text field 'id=uname' is 'Henk'.</msg>
-<status endtime="20171121 08:39:48.639" starttime="20171121 08:39:48.559" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.223">Content of text field 'id=uname' is 'Henk'.</msg>
+<status endtime="20171121 14:54:56.224" starttime="20171121 14:54:56.193" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1238,8 +1261,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>43</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.673">Content of text field 'id=age' is '43'.</msg>
-<status endtime="20171121 08:39:48.673" starttime="20171121 08:39:48.640" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.254">Content of text field 'id=age' is '43'.</msg>
+<status endtime="20171121 14:54:56.255" starttime="20171121 14:54:56.226" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1247,23 +1270,23 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>20000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.698">Content of text field 'id=salary' is '20000'.</msg>
-<status endtime="20171121 08:39:48.698" starttime="20171121 08:39:48.675" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.283">Content of text field 'id=salary' is '20000'.</msg>
+<status endtime="20171121 14:54:56.284" starttime="20171121 14:54:56.257" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>id=submit</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.701">Clicking button 'id=submit'.</msg>
-<status endtime="20171121 08:39:48.832" starttime="20171121 08:39:48.699" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.288">Clicking button 'id=submit'.</msg>
+<status endtime="20171121 14:54:56.366" starttime="20171121 14:54:56.285" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Wait Until Page Contains Element">
 <doc>Waits until the element identified by &lt;b&gt;locator&lt;/b&gt; is found on the</doc>
 <arguments>
 <arg>id=alert-success</arg>
 </arguments>
-<status endtime="20171121 08:39:48.912" starttime="20171121 08:39:48.835" status="PASS"></status>
+<status endtime="20171121 14:54:56.404" starttime="20171121 14:54:56.367" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Element Should Contain">
 <doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
@@ -1271,22 +1294,22 @@ Only local connections are allowed.</msg>
 <arg>id=alert-success</arg>
 <arg>success</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.963">Element Should Contain: success =&gt; OK</msg>
-<status endtime="20171121 08:39:48.964" starttime="20171121 08:39:48.914" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.443">Element Should Contain: success =&gt; OK</msg>
+<status endtime="20171121 14:54:56.444" starttime="20171121 14:54:56.406" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Element">
 <doc>Click on the element identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>//button[contains(@class,'remove')]</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:48.967">Clicking element '//button[contains(@class,'remove')]'.</msg>
-<status endtime="20171121 08:39:49.127" starttime="20171121 08:39:48.965" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:54:56.447">Clicking element '//button[contains(@class,'remove')]'.</msg>
+<status endtime="20171121 14:54:56.527" starttime="20171121 14:54:56.445" status="PASS"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:39:50.416" starttime="20171121 08:39:49.129" status="PASS"></status>
+<status endtime="20171121 14:54:58.813" starttime="20171121 14:54:56.528" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:39:50.417" starttime="20171121 08:39:44.583" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:54:58.814" starttime="20171121 14:54:53.315" status="PASS"></status>
 </test>
 <test name="Test Add duplicate entry" id="s1-s3-t3">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
@@ -1295,11 +1318,11 @@ Only local connections are allowed.</msg>
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:50.426">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:39:50.428">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:39:54.025">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 48896
+<msg level="INFO" timestamp="20171121 14:54:58.819">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:54:58.821">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:55:01.335">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 11096
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:39:54.027" starttime="20171121 08:39:50.422" status="PASS"></status>
+<status endtime="20171121 14:55:01.339" starttime="20171121 14:54:58.817" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1307,8 +1330,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Sjors</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.031">Typing text 'Sjors' into text field 'id=uname'</msg>
-<status endtime="20171121 08:39:54.181" starttime="20171121 08:39:54.028" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.344">Typing text 'Sjors' into text field 'id=uname'</msg>
+<status endtime="20171121 14:55:01.497" starttime="20171121 14:55:01.341" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1316,8 +1339,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>50</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.185">Typing text '50' into text field 'id=age'</msg>
-<status endtime="20171121 08:39:54.313" starttime="20171121 08:39:54.182" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.501">Typing text '50' into text field 'id=age'</msg>
+<status endtime="20171121 14:55:01.590" starttime="20171121 14:55:01.498" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1325,16 +1348,16 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>25000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.316">Typing text '25000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:39:54.503" starttime="20171121 08:39:54.314" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.593">Typing text '25000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:55:01.687" starttime="20171121 14:55:01.591" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>id=submit</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.510">Clicking button 'id=submit'.</msg>
-<status endtime="20171121 08:39:54.705" starttime="20171121 08:39:54.505" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.692">Clicking button 'id=submit'.</msg>
+<status endtime="20171121 14:55:01.782" starttime="20171121 14:55:01.689" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1342,8 +1365,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Sjors</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.719">Typing text 'Sjors' into text field 'id=uname'</msg>
-<status endtime="20171121 08:39:54.811" starttime="20171121 08:39:54.710" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.785">Typing text 'Sjors' into text field 'id=uname'</msg>
+<status endtime="20171121 14:55:01.873" starttime="20171121 14:55:01.783" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1351,8 +1374,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>50</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.814">Typing text '50' into text field 'id=age'</msg>
-<status endtime="20171121 08:39:54.856" starttime="20171121 08:39:54.812" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.877">Typing text '50' into text field 'id=age'</msg>
+<status endtime="20171121 14:55:01.923" starttime="20171121 14:55:01.875" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1360,8 +1383,8 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>25000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.860">Typing text '25000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:39:54.905" starttime="20171121 08:39:54.857" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:01.927">Typing text '25000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:55:01.972" starttime="20171121 14:55:01.925" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1369,8 +1392,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Sjors</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.932">Content of text field 'id=uname' is 'Sjors'.</msg>
-<status endtime="20171121 08:39:54.933" starttime="20171121 08:39:54.907" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:02.000">Content of text field 'id=uname' is 'Sjors'.</msg>
+<status endtime="20171121 14:55:02.001" starttime="20171121 14:55:01.973" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1378,8 +1401,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>50</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.958">Content of text field 'id=age' is '50'.</msg>
-<status endtime="20171121 08:39:54.958" starttime="20171121 08:39:54.934" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:02.038">Content of text field 'id=age' is '50'.</msg>
+<status endtime="20171121 14:55:02.040" starttime="20171121 14:55:02.003" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1387,23 +1410,23 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>25000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.981">Content of text field 'id=salary' is '25000'.</msg>
-<status endtime="20171121 08:39:54.982" starttime="20171121 08:39:54.959" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:02.065">Content of text field 'id=salary' is '25000'.</msg>
+<status endtime="20171121 14:55:02.066" starttime="20171121 14:55:02.041" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>id=submit</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:54.984">Clicking button 'id=submit'.</msg>
-<status endtime="20171121 08:39:55.045" starttime="20171121 08:39:54.982" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:02.068">Clicking button 'id=submit'.</msg>
+<status endtime="20171121 14:55:02.126" starttime="20171121 14:55:02.067" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Wait Until Page Contains Element">
 <doc>Waits until the element identified by &lt;b&gt;locator&lt;/b&gt; is found on the</doc>
 <arguments>
 <arg>id=alert-danger</arg>
 </arguments>
-<status endtime="20171121 08:39:55.066" starttime="20171121 08:39:55.046" status="PASS"></status>
+<status endtime="20171121 14:55:02.148" starttime="20171121 14:55:02.127" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Element Should Contain">
 <doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
@@ -1411,22 +1434,22 @@ Only local connections are allowed.</msg>
 <arg>id=alert-danger</arg>
 <arg>Error while creating User</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:55.096">Element Should Contain: Error while creating User =&gt; OK</msg>
-<status endtime="20171121 08:39:55.096" starttime="20171121 08:39:55.067" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:02.185">Element Should Contain: Error while creating User =&gt; OK</msg>
+<status endtime="20171121 14:55:02.187" starttime="20171121 14:55:02.149" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Element">
 <doc>Click on the element identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>//button[contains(@class,'remove')]</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:55.099">Clicking element '//button[contains(@class,'remove')]'.</msg>
-<status endtime="20171121 08:39:55.176" starttime="20171121 08:39:55.097" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:02.192">Clicking element '//button[contains(@class,'remove')]'.</msg>
+<status endtime="20171121 14:55:02.275" starttime="20171121 14:55:02.189" status="PASS"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:39:56.628" starttime="20171121 08:39:55.177" status="PASS"></status>
+<status endtime="20171121 14:55:04.528" starttime="20171121 14:55:02.277" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:39:56.631" starttime="20171121 08:39:50.420" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:55:04.529" starttime="20171121 14:54:58.815" status="PASS"></status>
 </test>
 <test name="Add values and reset form with short name" id="s1-s3-t4">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
@@ -1435,11 +1458,11 @@ Only local connections are allowed.</msg>
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:56.641">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:39:56.643">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:39:59.947">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 14379
+<msg level="INFO" timestamp="20171121 14:55:04.534">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:55:04.535">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:55:07.167">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 42285
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:39:59.949" starttime="20171121 08:39:56.637" status="PASS"></status>
+<status endtime="20171121 14:55:07.171" starttime="20171121 14:55:04.532" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1447,8 +1470,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>An</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:39:59.954">Typing text 'An' into text field 'id=uname'</msg>
-<status endtime="20171121 08:40:00.286" starttime="20171121 08:39:59.951" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.176">Typing text 'An' into text field 'id=uname'</msg>
+<status endtime="20171121 14:55:07.316" starttime="20171121 14:55:07.173" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1456,8 +1479,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>23</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:00.292">Typing text '23' into text field 'id=age'</msg>
-<status endtime="20171121 08:40:00.518" starttime="20171121 08:40:00.288" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.323">Typing text '23' into text field 'id=age'</msg>
+<status endtime="20171121 14:55:07.410" starttime="20171121 14:55:07.317" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1465,8 +1488,8 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>10000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:00.528">Typing text '10000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:40:00.773" starttime="20171121 08:40:00.521" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.413">Typing text '10000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:55:07.505" starttime="20171121 14:55:07.411" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1474,8 +1497,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>An</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:00.831">Content of text field 'id=uname' is 'An'.</msg>
-<status endtime="20171121 08:40:00.833" starttime="20171121 08:40:00.775" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.533">Content of text field 'id=uname' is 'An'.</msg>
+<status endtime="20171121 14:55:07.534" starttime="20171121 14:55:07.506" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1483,8 +1506,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>23</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:00.918">Content of text field 'id=age' is '23'.</msg>
-<status endtime="20171121 08:40:00.920" starttime="20171121 08:40:00.835" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.562">Content of text field 'id=age' is '23'.</msg>
+<status endtime="20171121 14:55:07.563" starttime="20171121 14:55:07.536" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1492,16 +1515,16 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>10000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:00.998">Content of text field 'id=salary' is '10000'.</msg>
-<status endtime="20171121 08:40:01.001" starttime="20171121 08:40:00.923" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.589">Content of text field 'id=salary' is '10000'.</msg>
+<status endtime="20171121 14:55:07.590" starttime="20171121 14:55:07.564" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>id=reset</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:01.010">Clicking button 'id=reset'.</msg>
-<status endtime="20171121 08:40:01.206" starttime="20171121 08:40:01.004" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.593">Clicking button 'id=reset'.</msg>
+<status endtime="20171121 14:55:07.673" starttime="20171121 14:55:07.591" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1509,8 +1532,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:01.245">Content of text field 'id=uname' is ''.</msg>
-<status endtime="20171121 08:40:01.246" starttime="20171121 08:40:01.208" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.697">Content of text field 'id=uname' is ''.</msg>
+<status endtime="20171121 14:55:07.698" starttime="20171121 14:55:07.674" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1518,8 +1541,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:01.292">Content of text field 'id=age' is ''.</msg>
-<status endtime="20171121 08:40:01.294" starttime="20171121 08:40:01.248" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.724">Content of text field 'id=age' is ''.</msg>
+<status endtime="20171121 14:55:07.725" starttime="20171121 14:55:07.699" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1527,14 +1550,14 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:01.355">Content of text field 'id=salary' is ''.</msg>
-<status endtime="20171121 08:40:01.357" starttime="20171121 08:40:01.296" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:07.751">Content of text field 'id=salary' is ''.</msg>
+<status endtime="20171121 14:55:07.752" starttime="20171121 14:55:07.726" status="PASS"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:40:03.020" starttime="20171121 08:40:01.358" status="PASS"></status>
+<status endtime="20171121 14:55:10.056" starttime="20171121 14:55:07.754" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:40:03.022" starttime="20171121 08:39:56.634" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:55:10.056" starttime="20171121 14:55:04.530" status="PASS"></status>
 </test>
 <test name="Add values and reset form with a long name" id="s1-s3-t5">
 <kw type="setup" library="Selenium2Library" name="Open Browser">
@@ -1543,11 +1566,11 @@ Only local connections are allowed.</msg>
 <arg>http://localhost:8080/SpringBootCRUDApp/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:03.031">browserName: chrome</msg>
-<msg level="INFO" timestamp="20171121 08:40:03.033">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
-<msg level="INFO" timestamp="20171121 08:40:06.255">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 44399
+<msg level="INFO" timestamp="20171121 14:55:10.062">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:55:10.064">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:55:12.589">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 48649
 Only local connections are allowed.</msg>
-<status endtime="20171121 08:40:06.258" starttime="20171121 08:40:03.027" status="PASS"></status>
+<status endtime="20171121 14:55:12.590" starttime="20171121 14:55:10.059" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1555,8 +1578,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:06.268">Typing text 'Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick' into text field 'id=uname'</msg>
-<status endtime="20171121 08:40:07.080" starttime="20171121 08:40:06.261" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:12.595">Typing text 'Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick' into text field 'id=uname'</msg>
+<status endtime="20171121 14:55:12.895" starttime="20171121 14:55:12.591" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1564,8 +1587,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>53</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.087">Typing text '53' into text field 'id=age'</msg>
-<status endtime="20171121 08:40:07.286" starttime="20171121 08:40:07.081" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:12.898">Typing text '53' into text field 'id=age'</msg>
+<status endtime="20171121 14:55:12.986" starttime="20171121 14:55:12.896" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Input Text">
 <doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
@@ -1573,8 +1596,8 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>100000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.290">Typing text '100000' into text field 'id=salary'</msg>
-<status endtime="20171121 08:40:07.445" starttime="20171121 08:40:07.287" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:12.990">Typing text '100000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:55:13.085" starttime="20171121 14:55:12.988" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1582,8 +1605,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.489">Content of text field 'id=uname' is 'Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick'.</msg>
-<status endtime="20171121 08:40:07.490" starttime="20171121 08:40:07.446" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.113">Content of text field 'id=uname' is 'Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick'.</msg>
+<status endtime="20171121 14:55:13.114" starttime="20171121 14:55:13.087" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1591,8 +1614,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>53</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.542">Content of text field 'id=age' is '53'.</msg>
-<status endtime="20171121 08:40:07.544" starttime="20171121 08:40:07.491" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.141">Content of text field 'id=age' is '53'.</msg>
+<status endtime="20171121 14:55:13.142" starttime="20171121 14:55:13.114" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1600,16 +1623,16 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>100000</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.611">Content of text field 'id=salary' is '100000'.</msg>
-<status endtime="20171121 08:40:07.613" starttime="20171121 08:40:07.546" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.166">Content of text field 'id=salary' is '100000'.</msg>
+<status endtime="20171121 14:55:13.167" starttime="20171121 14:55:13.143" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
 <arguments>
 <arg>id=reset</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.620">Clicking button 'id=reset'.</msg>
-<status endtime="20171121 08:40:07.810" starttime="20171121 08:40:07.615" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.172">Clicking button 'id=reset'.</msg>
+<status endtime="20171121 14:55:13.249" starttime="20171121 14:55:13.169" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1617,8 +1640,8 @@ Only local connections are allowed.</msg>
 <arg>id=uname</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.864">Content of text field 'id=uname' is ''.</msg>
-<status endtime="20171121 08:40:07.866" starttime="20171121 08:40:07.812" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.278">Content of text field 'id=uname' is ''.</msg>
+<status endtime="20171121 14:55:13.280" starttime="20171121 14:55:13.250" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1626,8 +1649,8 @@ Only local connections are allowed.</msg>
 <arg>id=age</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.919">Content of text field 'id=age' is ''.</msg>
-<status endtime="20171121 08:40:07.921" starttime="20171121 08:40:07.869" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.313">Content of text field 'id=age' is ''.</msg>
+<status endtime="20171121 14:55:13.314" starttime="20171121 14:55:13.283" status="PASS"></status>
 </kw>
 <kw library="Selenium2Library" name="Textfield Value Should Be">
 <doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
@@ -1635,35 +1658,254 @@ Only local connections are allowed.</msg>
 <arg>id=salary</arg>
 <arg>${EMPTY}</arg>
 </arguments>
-<msg level="INFO" timestamp="20171121 08:40:07.976">Content of text field 'id=salary' is ''.</msg>
-<status endtime="20171121 08:40:07.977" starttime="20171121 08:40:07.922" status="PASS"></status>
+<msg level="INFO" timestamp="20171121 14:55:13.343">Content of text field 'id=salary' is ''.</msg>
+<status endtime="20171121 14:55:13.345" starttime="20171121 14:55:13.315" status="PASS"></status>
 </kw>
 <kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
-<status endtime="20171121 08:40:09.757" starttime="20171121 08:40:07.979" status="PASS"></status>
+<status endtime="20171121 14:55:15.627" starttime="20171121 14:55:13.346" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20171121 08:40:09.760" starttime="20171121 08:40:03.024" status="PASS"></status>
+<status critical="yes" endtime="20171121 14:55:15.628" starttime="20171121 14:55:10.058" status="PASS"></status>
 </test>
+<test name="Edit user" id="s1-s3-t6">
+<kw type="setup" library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>http://localhost:8080/SpringBootCRUDApp/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:15.634">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171121 14:55:15.636">Opening browser 'chrome' to base url 'http://localhost:8080/SpringBootCRUDApp/'</msg>
+<msg level="INFO" timestamp="20171121 14:55:18.138">Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 25256
+Only local connections are allowed.</msg>
+<status endtime="20171121 14:55:18.140" starttime="20171121 14:55:15.631" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>Harrold</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.146">Typing text 'Harrold' into text field 'id=uname'</msg>
+<status endtime="20171121 14:55:18.304" starttime="20171121 14:55:18.141" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=age</arg>
+<arg>43</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.307">Typing text '43' into text field 'id=age'</msg>
+<status endtime="20171121 14:55:18.393" starttime="20171121 14:55:18.305" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=salary</arg>
+<arg>20000</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.397">Typing text '20000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:55:18.501" starttime="20171121 14:55:18.394" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>Harrold</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.527">Content of text field 'id=uname' is 'Harrold'.</msg>
+<status endtime="20171121 14:55:18.527" starttime="20171121 14:55:18.502" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=age</arg>
+<arg>43</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.557">Content of text field 'id=age' is '43'.</msg>
+<status endtime="20171121 14:55:18.558" starttime="20171121 14:55:18.528" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=salary</arg>
+<arg>20000</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.589">Content of text field 'id=salary' is '20000'.</msg>
+<status endtime="20171121 14:55:18.590" starttime="20171121 14:55:18.559" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Button">
+<doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=submit</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.594">Clicking button 'id=submit'.</msg>
+<status endtime="20171121 14:55:18.666" starttime="20171121 14:55:18.591" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Wait Until Page Contains Element">
+<doc>Waits until the element identified by &lt;b&gt;locator&lt;/b&gt; is found on the</doc>
+<arguments>
+<arg>id=alert-success</arg>
+</arguments>
+<status endtime="20171121 14:55:18.704" starttime="20171121 14:55:18.668" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Element Should Contain">
+<doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=alert-success</arg>
+<arg>success</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.740">Element Should Contain: success =&gt; OK</msg>
+<status endtime="20171121 14:55:18.740" starttime="20171121 14:55:18.706" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Element">
+<doc>Click on the element identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>//html[@class='ng-scope']/body/div[@class='ng-scope']/div[@class='generic-container ng-scope']/div[@class='panel panel-default'][2]/div[@class='panel-body']/div[@class='table-responsive']/table[@class='table table-hover']/tbody/tr[@class='ng-scope']/td[5]/button[@class='btn btn-success custom-width edit']</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.743">Clicking element '//html[@class='ng-scope']/body/div[@class='ng-scope']/div[@class='generic-container ng-scope']/div[@class='panel panel-default'][2]/div[@class='panel-body']/div[@class='table-responsive']/table[@class='table table-hover']/tbody/tr[@class='ng-scope']/td[5]/button[@class='btn btn-success custom-width edit']'.</msg>
+<status endtime="20171121 14:55:18.820" starttime="20171121 14:55:18.741" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>Lennard</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.824">Typing text 'Lennard' into text field 'id=uname'</msg>
+<status endtime="20171121 14:55:18.905" starttime="20171121 14:55:18.821" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=age</arg>
+<arg>42</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.908">Typing text '42' into text field 'id=age'</msg>
+<status endtime="20171121 14:55:18.949" starttime="20171121 14:55:18.906" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>id=salary</arg>
+<arg>10000</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:18.953">Typing text '10000' into text field 'id=salary'</msg>
+<status endtime="20171121 14:55:19.006" starttime="20171121 14:55:18.950" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=uname</arg>
+<arg>Lennard</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:19.040">Content of text field 'id=uname' is 'Lennard'.</msg>
+<status endtime="20171121 14:55:19.042" starttime="20171121 14:55:19.008" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=age</arg>
+<arg>42</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:19.090">Content of text field 'id=age' is '42'.</msg>
+<status endtime="20171121 14:55:19.092" starttime="20171121 14:55:19.045" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Textfield Value Should Be">
+<doc>Verify the text field identified by &lt;b&gt;locator&lt;/b&gt; is exactly</doc>
+<arguments>
+<arg>id=salary</arg>
+<arg>10000</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:19.130">Content of text field 'id=salary' is '10000'.</msg>
+<status endtime="20171121 14:55:19.132" starttime="20171121 14:55:19.094" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Button">
+<doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=submit</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:19.140">Clicking button 'id=submit'.</msg>
+<status endtime="20171121 14:55:19.225" starttime="20171121 14:55:19.135" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Wait Until Page Contains Element">
+<doc>Waits until the element identified by &lt;b&gt;locator&lt;/b&gt; is found on the</doc>
+<arguments>
+<arg>id=alert-success</arg>
+</arguments>
+<status endtime="20171121 14:55:19.247" starttime="20171121 14:55:19.226" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Element Should Contain">
+<doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>id=alert-success</arg>
+<arg>updated</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:19.291">Element Should Contain: updated =&gt; OK</msg>
+<status endtime="20171121 14:55:19.292" starttime="20171121 14:55:19.249" status="PASS"></status>
+</kw>
+<kw type="teardown" library="Selenium2Library" name="Close Browser">
+<doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
+<status endtime="20171121 14:55:21.645" starttime="20171121 14:55:19.294" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20171121 14:55:21.646" starttime="20171121 14:55:15.630" status="PASS"></status>
+</test>
+<kw type="teardown" name="Clear Database">
+<kw library="HttpRequestLibrary" name="Create Session">
+<doc>Create a HTTP session to a server</doc>
+<arguments>
+<arg>CRUDAppTeardown</arg>
+<arg>http://localhost:8080/SpringBootCRUDApp/api</arg>
+<arg>debug=True</arg>
+</arguments>
+<status endtime="20171121 14:55:21.661" starttime="20171121 14:55:21.654" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Delete Request">
+<doc> Send a DELETE request on the session object found using the</doc>
+<arguments>
+<arg>CRUDAppTeardown</arg>
+<arg>/user/</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg level="INFO" timestamp="20171121 14:55:21.671">${resp} = {"status_code":204,"headers":{"Date":"Tue, 21 Nov 2017 13:55:21 GMT"}}</msg>
+<status endtime="20171121 14:55:21.671" starttime="20171121 14:55:21.661" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+<arg>204</arg>
+</arguments>
+<msg level="INFO" timestamp="20171121 14:55:21.674">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20171121 14:55:21.674" starttime="20171121 14:55:21.672" status="PASS"></status>
+</kw>
+<status endtime="20171121 14:55:21.676" starttime="20171121 14:55:21.653" status="PASS"></status>
+</kw>
 <doc>A resource file containing the application specific keywords</doc>
-<status endtime="20171121 08:40:09.785" starttime="20171121 08:39:39.112" status="PASS"></status>
+<status endtime="20171121 14:55:21.676" starttime="20171121 14:54:47.848" status="PASS"></status>
 </suite>
-<status endtime="20171121 08:40:09.858" starttime="20171121 08:39:24.544" status="FAIL"></status>
+<status endtime="20171121 14:55:21.704" starttime="20171121 14:54:34.191" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="12" fail="2">Critical Tests</stat>
-<stat pass="12" fail="2">All Tests</stat>
+<stat pass="13" fail="2">Critical Tests</stat>
+<stat pass="13" fail="2">All Tests</stat>
 </total>
 <tag>
 <stat pass="7" fail="0">GET</stat>
 </tag>
 <suite>
-<stat pass="12" fail="2" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="13" fail="2" name="Acceptance" id="s1">Acceptance</stat>
 <stat pass="7" fail="0" name="IntegrationTests" id="s1-s1">Acceptance.IntegrationTests</stat>
 <stat pass="0" fail="2" name="ShouldFail" id="s1-s2">Acceptance.ShouldFail</stat>
-<stat pass="5" fail="0" name="ShouldPass" id="s1-s3">Acceptance.ShouldPass</stat>
+<stat pass="6" fail="0" name="ShouldPass" id="s1-s3">Acceptance.ShouldPass</stat>
 </suite>
 </statistics>
 <errors>
+<msg level="ERROR" timestamp="20171121 14:54:34.082">Error in file 'D:\Data\VWissink\Documents\Framework Tries\BaselineProjectRobotSeleniumJava\src\test\robotframework\acceptance\ShouldPass.txt': Setting 'Suite Setup' used multiple times.</msg>
 </errors>
 </robot>

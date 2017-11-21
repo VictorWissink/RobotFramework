@@ -2,7 +2,10 @@
 Documentation  A resource file containing the application specific keywords
 Library  Selenium2Library
 Library  OperatingSystem
+Library  HttpRequestLibrary
 Suite Setup  Setup chromedriver
+Suite Setup      Clear Database
+Suite Teardown   Clear Database
 Test Setup       Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
 Test Teardown    Close Browser
 
@@ -75,7 +78,34 @@ Add values and reset form with a long name
     Textfield Value Should Be  id=age     ${EMPTY}
     Textfield Value Should Be  id=salary  ${EMPTY}
 
+Edit user
+    Input Text  id=uname  Harrold
+    Input Text  id=age  43
+    Input Text  id=salary  20000
+    Textfield Value Should Be  id=uname  Harrold
+    Textfield Value Should Be  id=age  43
+    Textfield Value Should Be  id=salary  20000
+    Click Button  id=submit
+    Wait Until Page Contains Element  id=alert-success
+    Element Should Contain  id=alert-success  success
+    Click Element    //html[@class='ng-scope']/body/div[@class='ng-scope']/div[@class='generic-container ng-scope']/div[@class='panel panel-default'][2]/div[@class='panel-body']/div[@class='table-responsive']/table[@class='table table-hover']/tbody/tr[@class='ng-scope']/td[5]/button[@class='btn btn-success custom-width edit']
+    Input Text  id=uname  Lennard
+    Input Text  id=age  42
+    Input Text  id=salary  10000
+    Textfield Value Should Be  id=uname  Lennard
+    Textfield Value Should Be  id=age  42
+    Textfield Value Should Be  id=salary  10000
+    Click Button  id=submit
+    Wait Until Page Contains Element  id=alert-success
+    Element Should Contain  id=alert-success  updated
+
+
+
+
 *** Keywords ****
 Setup chromedriver
   Set Environment Variable  webdriver.chrome.driver  D:/Data/VWissink/Documents/chromedriver/chromedriver.exe
-
+Clear Database
+  Create Session  CRUDAppTeardown  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+  ${resp}=  Delete Request  CRUDAppTeardown  /user/
+  Should Be Equal As Strings  ${resp.status_code}  204
