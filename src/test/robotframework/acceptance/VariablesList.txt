@@ -5,9 +5,9 @@ Library  OperatingSystem
 
 
 ***  Variables  ***
-${NAME}     Set Variable  "Henk"
-${AGE}      Set Variable  43
-${SALARY}   Set Variable  20000
+${NAME}             Henk
+    age = 43
+    salary = 20000
 
 *** Keywords ****
 Setup chromedriver

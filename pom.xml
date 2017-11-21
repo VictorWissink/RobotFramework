@@ -72,6 +72,12 @@
 			<version>1.4.0.8</version>
 		</dependency>
 
+<!--HTTP REST LIBRARY -->
+		<dependency>
+			<groupId>com.github.hi-fi</groupId>
+			<artifactId>robotframework-httprequestlibrary</artifactId>
+			<version>0.0.8</version>
+		</dependency>
 
 	</dependencies>
 	<build>

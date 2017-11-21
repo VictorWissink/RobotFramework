@@ -3,17 +3,26 @@ Documentation  A resource file containing the application specific keywords
 Library  Selenium2Library
 Library  OperatingSystem
 Suite Setup  Setup chromedriver
+Test Setup       Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
+Test Teardown    Close Browser
 
 ***  Variables  ***
 
 
 *** Test Cases ***
-Check out spring boot crud app
-	Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
-	Close Browser
+Add values and reset form
+    Input Text  id=uname  Henk
+    Input Text  id=age  43
+    Input Text  id=salary  20000
+    Textfield Value Should Be  id=uname  Henk
+    Textfield Value Should Be  id=age  43
+    Textfield Value Should Be  id=salary  20000
+    Click Button  id=reset
+    Textfield Value Should Be  id=uname   ${EMPTY}
+    Textfield Value Should Be  id=age     ${EMPTY}
+    Textfield Value Should Be  id=salary  ${EMPTY}
 
 Test Add entry and remove it
-    Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
     Input Text  id=uname  Henk
     Input Text  id=age  43
     Input Text  id=salary  20000
@@ -23,8 +32,48 @@ Test Add entry and remove it
     Click Button  id=submit
     Wait Until Page Contains Element  id=alert-success
     Element Should Contain  id=alert-success  success
-    Click Button  id=remove
-    Close Browser
+    Click Element       //button[contains(@class,'remove')]
+
+Test Add duplicate entry
+    Input Text  id=uname  Sjors
+    Input Text  id=age  50
+    Input Text  id=salary  25000
+    Click Button  id=submit
+    Input Text  id=uname  Sjors
+    Input Text  id=age  50
+    Input Text  id=salary  25000
+    Textfield Value Should Be  id=uname  Sjors
+    Textfield Value Should Be  id=age  50
+    Textfield Value Should Be  id=salary  25000
+    Click Button  id=submit
+    Wait Until Page Contains Element  id=alert-danger
+    Element Should Contain  id=alert-danger  Error while creating User
+    Click Element       //button[contains(@class,'remove')]
+
+
+Add values and reset form with short name
+    Input Text  id=uname  An
+    Input Text  id=age  23
+    Input Text  id=salary  10000
+    Textfield Value Should Be  id=uname  An
+    Textfield Value Should Be  id=age  23
+    Textfield Value Should Be  id=salary  10000
+    Click Button  id=reset
+    Textfield Value Should Be  id=uname   ${EMPTY}
+    Textfield Value Should Be  id=age     ${EMPTY}
+    Textfield Value Should Be  id=salary  ${EMPTY}
+
+Add values and reset form with a long name
+    Input Text  id=uname  Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick
+    Input Text  id=age  53
+    Input Text  id=salary  100000
+    Textfield Value Should Be  id=uname  Prince-Fritz-Cruene-August-Willem-Jan-Hendrik-Dick
+    Textfield Value Should Be  id=age  53
+    Textfield Value Should Be  id=salary  100000
+    Click Button  id=reset
+    Textfield Value Should Be  id=uname   ${EMPTY}
+    Textfield Value Should Be  id=age     ${EMPTY}
+    Textfield Value Should Be  id=salary  ${EMPTY}
 
 *** Keywords ****
 Setup chromedriver

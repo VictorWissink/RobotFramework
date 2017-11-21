@@ -67,8 +67,8 @@
 		                <td>{{u.name}}</td>
 		                <td>{{u.age}}</td>
 		                <td>{{u.salary}}</td>
-		                <td><button type="button" ng-click="ctrl.editUser(u.id)" id="edit" class="btn btn-success custom-width">Edit</button></td>
-		                <td><button type="button" ng-click="ctrl.removeUser(u.id)" id="remove" class="btn btn-danger custom-width">Remove</button></td>
+		                <td><button type="button" ng-click="ctrl.editUser(u.id)" class="btn btn-success custom-width edit">Edit</button></td>
+		                <td><button type="button" ng-click="ctrl.removeUser(u.id)" class="btn btn-danger custom-width remove">Remove</button></td>
 		            </tr>
 		            </tbody>
 		        </table>		

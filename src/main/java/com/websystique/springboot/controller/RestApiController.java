@@ -110,6 +110,15 @@ public class RestApiController {
 		return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
 	}
 
+	// -------------------Get   Version-------------------------------------------
+	@RequestMapping(value = "/version", method = RequestMethod.GET)
+	public ResponseEntity<?> getVersion() {
+		logger.info("Fetching Version Number");
+		return new ResponseEntity<String>("1.0", HttpStatus.OK);
+	}
+
+
+
 	// ------------------- Delete All Users-----------------------------
 
 	@RequestMapping(value = "/user/", method = RequestMethod.DELETE)

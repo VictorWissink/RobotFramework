@@ -1,0 +1,126 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+Library  HttpRequestLibrary
+Library  OperatingSystem
+Force Tags    GET
+Test Setup  Clear Database
+
+***  Variables  ***
+
+
+*** Test Cases ***
+Get server version
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api
+    ${resp}=  Get Request  CRUDApp  /version
+    Should Be Equal As Strings  ${resp.status_code}  200
+    Should Be Equal As Strings  ${resp.content}  1.0
+
+
+Get User that does not exist
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+    ${resp}=  Get Request  CRUDApp  /user/1
+    Log  ${resp}
+    Should Be Equal As Strings  ${resp.status_code}  404
+    Should Contain  ${resp.content}  not found
+
+
+Get all users without users in database
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api
+    ${resp}=  Get Request  CRUDApp  /user/
+    Should Be Equal As Strings  ${resp.status_code}  204
+    Log  ${resp.content}
+    Log  ${resp}
+
+
+Add User and check if it's added
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+    Set Test Variable  ${data}  {"name" : "Henksaer", "age" : "24", "salary" : "20000"}
+    &{headers}=  Create Dictionary  Content-Type=application/json
+    ${resp}=  Post Request  CRUDApp  /user/  data=${data}  headers=${headers}
+    Log  ${data}
+    Log  ${resp}
+    Should Be Equal As Strings  ${resp.status_code}  201
+    ${resp2}=  Get Request  CRUDApp  /user/
+    Log  ${resp2}
+    Should Be Equal As Strings  ${resp2.status_code}  200
+    Should Contain  ${resp2.content}  Henksaer
+
+
+Add User without content
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+    Set Test Variable  ${data}  {}
+    &{headers}=  Create Dictionary  Content-Type=application/json
+    ${resp}=  Post Request  CRUDApp  /user/  data=${data}  headers=${headers}
+    Log  ${data}
+    Log  ${resp}
+    Should Be Equal As Strings  ${resp.status_code}  400
+
+
+Add same user twice
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+    Set Test Variable  ${data}  {"name" : "Henksaer", "age" : "24", "salary" : "20000"}
+    &{headers}=  Create Dictionary  Content-Type=application/json
+    ${resp}=  Post Request  CRUDApp  /user/  data=${data}  headers=${headers}
+    Log  ${data}
+    Log  ${resp}
+    Should Be Equal As Strings  ${resp.status_code}  201
+    ${resp2}=  Get Request  CRUDApp  /user/
+    Log  ${resp2}
+    Should Be Equal As Strings  ${resp2.status_code}  200
+    Should Contain  ${resp2.content}  Henksaer
+    ${resp2}=  Post Request  CRUDApp  /user/  data=${data}  headers=${headers}
+    Log  ${resp2}
+    Should Be Equal As Strings  ${resp2.status_code}  409
+
+
+Add Three Users and check if it's added
+    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+    Set Test Variable  ${user1}  {"name" : "Henksaer", "age" : "24", "salary" : "20000"}
+    Set Test Variable  ${user2}  {"name" : "Willem", "age" : "84", "salary" : "21000"}
+    Set Test Variable  ${user3}  {"name" : "Karl", "age" : "14", "salary" : "203000"}
+    &{headers}=  Create Dictionary  Content-Type=application/json
+    ${resp}=  Post Request  CRUDApp  /user/  data=${user1}  headers=${headers}
+    Should Be Equal As Strings  ${resp.status_code}  201
+    ${resp}=  Post Request  CRUDApp  /user/  data=${user2}  headers=${headers}
+    Should Be Equal As Strings  ${resp.status_code}  201
+    ${resp}=  Post Request  CRUDApp  /user/  data=${user3}  headers=${headers}
+    Should Be Equal As Strings  ${resp.status_code}  201
+    Log  ${user1}
+    Log  ${resp}
+    ${resp2}=  Get Request  CRUDApp  /user/
+    Log  ${resp2}
+    Should Be Equal As Strings  ${resp2.status_code}  200
+    Should Contain  ${resp2.content}  Henksaer
+    Should Contain  ${resp2.content}  Willem
+    Should Contain  ${resp2.content}  Karl
+
+
+#Add User and remove it and check if it is removed
+#    Create Session  CRUDApp  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+#    Set Test Variable  ${data}  {"name" : "Thomas", "age" : "22", "salary" : "29000"}
+#    &{headers}=  Create Dictionary  Content-Type=application/json
+#    ${resp}=  Post Request  CRUDApp  /user/  data=${data}  headers=${headers}
+#    Log  ${data}
+#    Log  ${resp}
+#    Should Be Equal As Strings  ${resp.status_code}  201
+#    ${resp2}=  Get Request  CRUDApp  /user/
+#    Should Be Equal As Strings  ${resp2.status_code}  200
+#    Log  ${resp2.content}
+#    Should Contain  ${resp2.json[0]}  Thomas
+#    ${resp3}=  Delete Request  CRUDApp  /user/
+#    Should Be Equal As Strings  ${resp3.status_code}  204
+#    ${resp4}=  Get Request  CRUDApp  /user/${userID}
+#    Log  ${resp4}
+#    Should Be Equal As Strings  ${resp4.status_code}  404
+
+
+
+
+
+*** Keywords ****
+Setup chromedriver
+  Set Environment Variable  webdriver.chrome.driver  D:/Data/VWissink/Documents/chromedriver/chromedriver.exe
+Clear Database
+  Create Session  CRUDAppTeardown  http://localhost:8080/SpringBootCRUDApp/api  debug=True
+  ${resp}=  Delete Request  CRUDAppTeardown  /user/
+  Should Be Equal As Strings  ${resp.status_code}  204

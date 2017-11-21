@@ -4,26 +4,46 @@ Resource  VariablesList.txt
 Library  Selenium2Library
 Library  OperatingSystem
 Suite Setup  Setup chromedriver
-
+Test Setup       Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
+Test Teardown    Close Browser
 
 *** Test Cases ***
 
-Test Add duplicate entry
-    Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
-    Input Text  id=uname  Henk
-    Input Text  id=age  43
-    Input Text  id=salary  20000
+Invalid variable reference
+    Input Text  id=uname  Sjors
+    Input Text  id=age  50
+    Input Text  id=salary  ${SALARY}
     Click Button  id=submit
-    Input Text  id=uname  Henk
-    Input Text  id=age  43
-    Input Text  id=salary  20000
-    Textfield Value Should Be  id=uname  Henk
-    Textfield Value Should Be  id=age  43
-    Textfield Value Should Be  id=salary  20000
+    Input Text  id=uname  Sjors
+    Input Text  id=age  50
+    Input Text  id=salary  25000
+    Textfield Value Should Be  id=uname  Sjors
+    Textfield Value Should Be  id=age  50
+    Textfield Value Should Be  id=salary  25000
+    Click Button  id=submit
+    Wait Until Page Contains Element  id=alert-danger
+    Element Should Contain  id=alert-danger  Error while creating User
+    Click Element       //*[contains(text(),'Remove')]
+
+Nonexistent ID
+    Input Text  id=uname  Sjors
+    Input Text  id=age  50
+    Input Text  id=salary  25000
+    Textfield Value Should Be  id=nonexistendID  Sjors
+    Textfield Value Should Be  id=age  50
+    Textfield Value Should Be  id=salary  25000
+    Click Button  id=submit
+    Input Text  id=uname  Sjors
+    Input Text  id=age  50
+    Input Text  id=salary  25000
+    Textfield Value Should Be  id=uname  Sjors
+    Textfield Value Should Be  id=age  50
+    Textfield Value Should Be  id=salary  25000
     Click Button  id=submit
     Wait Until Page Contains Element  id=alert-danger
     Element Should Contain  id=alert-danger  Error while creating User
     Click Button  id=remove
-    Close Browser
+
+
 
 *** Keywords ****
