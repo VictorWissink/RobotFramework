@@ -1,0 +1,7 @@
+#gitignore 
+.idea
+.settings
+*.iml
+.project
+.classpath
+.target
