@@ -1,4 +1,4 @@
-package com.websystique.springboot.util;
+package nl.ovsoftware.oldenzaal.testprototypes.robotframework.util;
 
 
 public class CustomErrorType {

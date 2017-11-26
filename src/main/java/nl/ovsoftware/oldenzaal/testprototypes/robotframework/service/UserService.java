@@ -1,7 +1,7 @@
-package com.websystique.springboot.service;
+package nl.ovsoftware.oldenzaal.testprototypes.robotframework.service;
 
 
-import com.websystique.springboot.model.User;
+import nl.ovsoftware.oldenzaal.testprototypes.robotframework.model.User;
 
 import java.util.List;
 

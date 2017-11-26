@@ -1,4 +1,4 @@
-package com.websystique.springboot.model;
+package nl.ovsoftware.oldenzaal.testprototypes.robotframework.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
 

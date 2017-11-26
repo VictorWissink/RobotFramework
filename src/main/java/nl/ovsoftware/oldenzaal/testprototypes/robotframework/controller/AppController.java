@@ -1,4 +1,4 @@
-package com.websystique.springboot.controller;
+package nl.ovsoftware.oldenzaal.testprototypes.robotframework.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

@@ -1,6 +1,6 @@
-package com.websystique.springboot.repositories;
+package nl.ovsoftware.oldenzaal.testprototypes.robotframework.repositories;
 
-import com.websystique.springboot.model.User;
+import nl.ovsoftware.oldenzaal.testprototypes.robotframework.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

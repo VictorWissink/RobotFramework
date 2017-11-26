@@ -23,7 +23,7 @@ spring:
   profiles: prod
 datasource:
   sampleapp:
-    url: jdbc:mysql://localhost:3306/websystique
+    url: jdbc:mysql://localhost:3306/ovsoftware
     username: root
     password: 12341234
     driverClassName: com.mysql.jdbc.Driver
