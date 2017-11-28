@@ -1,7 +1,7 @@
 #gitignore 
-.idea
+.idea/
 .settings
 *.iml
 .project
 .classpath
-.target
+.target/
