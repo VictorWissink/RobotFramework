@@ -4,7 +4,6 @@ Library  Selenium2Library
 Library  OperatingSystem
 Library  HttpRequestLibrary
 Suite Setup  Setup chromedriver
-Suite Setup      Clear Database
 Suite Teardown   Clear Database
 Test Setup       Open Browser  http://localhost:8080/SpringBootCRUDApp/  chrome
 Test Teardown    Close Browser

@@ -8,7 +8,7 @@ import nl.ovsoftware.oldenzaal.testprototypes.robotframework.configuration.JpaCo
 
 
 @Import(JpaConfiguration.class)
-@SpringBootApplication(scanBasePackages={"com.ovsoftware.robotframework"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
+@SpringBootApplication(scanBasePackages={"nl.ovsoftware.oldenzaal.testprototypes.robotframework"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
 public class SpringBootCRUDApp {
 
 	public static void main(String[] args) {
